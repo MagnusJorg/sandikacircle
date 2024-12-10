@@ -55,6 +55,7 @@ h2{
 
 .top img{
     max-width: 35px;
+    height: auto;
     cursor: pointer; /* Marker billederne som klikbare */
 }
 
