@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url("https://p.typekit.net/p.css?s=1&k=gur3pox&ht=tk&f=50750.50754.50757.50759.50761.50762&a=248534216&app=typekit&e=css");
+
 @font-face {
     font-family: 'Kaftan';
     src: url('./fonts/kaftan-trial.otf') format('opentype'); /* Path to the font file */
@@ -22,11 +24,21 @@ body{
 
 p{
     font-family: 'Montserrat';
+    font-size: 16px;
 }
 
 h1{
     font-family: 'Kaftan', sans-serif;
-    font-size: 40px;
+    font-size: 55px;
+    font-weight: 30;
+    color: var(--sekundaereFarve);
+}
+
+h2{
+    font-family:"sigurd";
+    font-weight: 15;
+    margin-bottom: 0px;
+    font-size: 20px;
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
