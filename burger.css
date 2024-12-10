@@ -102,7 +102,7 @@ h2{
 }
 
 /* Luk-knap */
-.menu-close {
+.menuluk {
     align-self: flex-end;
     font-size: 24px;
     cursor: pointer;
@@ -118,6 +118,14 @@ h2{
 .hidden {
     display: none;
 }
+
+/* Styling for dropdown-menu */
+#holdMenu {
+    padding-left: 20px; /* Indrykning for at skille den fra hovedmenuen */
+    font-size: 18px;
+}
+
+
 
 
 

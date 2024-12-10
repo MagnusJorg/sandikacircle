@@ -126,4 +126,64 @@ h2{
     margin-bottom: 0px;
 }
 
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Skjult udenfor skærmen */
+    width: 70%;
+    height: 100%;
+    background-color: #0B132B;
+    color: #FCF9F2;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 30px 0 0 30px; /* runde hjorner*/
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* spreeder links */
+    height: 80%; /* hojden på selve tekst boxen */
+    margin-top: 0px;
+
+}
+
+/* plads mellem x og tekst */
+.menu ul li {
+    margin: 20px 0;
+}
+
+/* dekoration af tekst*/
+.menu ul li a {
+    text-decoration: none;
+    color: #FCF9F2;
+    font-size: 20px;
+    font-family: 'Kaftan', sans-serif;
+    font-size: 30px;
+}
+
+/* Luk-knap */
+.menu-close {
+    align-self: flex-end;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Aktiv menu */
+.menu.active {
+    right: 0; /* Glid ind på skærmen */
+}
+
+
+/* Skjul dropdown-menuen */
+.hidden {
+    display: none;
+}
+
 }
