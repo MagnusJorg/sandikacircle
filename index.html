@@ -5,33 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandika Circle forside</title>
     <script src="js.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="burger.css">
     <link rel="stylesheet" href="https://use.typekit.net/gur3pox.css">
 </head>
 <body>
     <header>
         <section class="top">
             <a href="404.html"><img src="images/logInd.webp" alt="Log Ind"></a>
-            <img id="burgerIcon" src="images/buger.webp" alt="Burger Menu">
+            <img id="burgerIkon" src="images/buger.webp" alt="Burger Menu">
         </section>
     </header>
 
     <nav id="menu" class="menu">
-        <div class="menu-close" id="closeMenu">×</div>
+        <div class="menuluk" id="lukMenu">×</div>
         <ul>
-            <li><a href="hold.html">Hold</a></li>
-            <li><a href="bliv-medlem.html">Bliv Medlem</a></li>
-            <li><a href="faciliteter.html">Faciliteter</a></li>
+            <!-- Hold -->
+            <li>
+                <a href="#" id="holdButton">Hold</a>
+                <ul id="holdMenu" style="display: none;">
+                    <li><a href="tilmelding.html">Tilmelding</a></li>
+                    <li><a href="oversigt.html">Oversigt</a></li>
+                    <li><a href="pakkeliste.html">Pakkeliste</a></li>
+                </ul>
+            </li>
+    
+            <!-- Bliv Medlem -->
+            <li>
+                <a href="#" id="blivMedlemButton">Bliv Medlem</a>
+                <ul id="blivMedlemMenu" style="display: none;">
+                    <li><a href="priser.html">Priser</a></li>
+                    <li><a href="betingelser.html">Betingelser</a></li>
+                </ul>
+            </li>
+    
+            <!-- Faciliteter -->
+            <li>
+                <a href="#" id="faciliteterButton">Faciliteter</a>
+                <ul id="faciliteterMenu" style="display: none;">
+                    <li><a href="faciliteter.html">Faciliteter</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </li>
+    
+            <!-- Om Sandika -->
             <li><a href="om-sandika.html">Om Sandika</a></li>
-            <li><a href="kontakt.html">Kontakt Os</a></li>
+    
+            <!-- Kontakt Os -->
+            <li>
+                <a href="#" id="kontaktButton">Kontakt Os</a>
+                <ul id="kontaktMenu" style="display: none;">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </li>
         </ul>
     </nav>
 
-
-
-<section class="logoforside">
-    <img src="images/logot.webp" alt="">
-</section>
+    <section class="logoforside">
+        <video id="logoAnimation" autoplay muted playsinline>
+            <source src="videos/sandikalogoanima.mp4" type="video/mp4">
+            Din browser understøtter ikke video.
+        </video>
+    </section>
+    
 
 <section class="tekst">
     <article class="overskrift"><h1>Hvad er <br> yogalates?</h1></article>
