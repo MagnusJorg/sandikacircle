@@ -1,0 +1,53 @@
+
+:root {
+    --primaereFarve: #FCF9F2;
+    --sekundaereFarve: #340F0F;
+    --blofarve: #0B132B;
+    --morkebrun: #230902;
+}
+
+body{
+    background-color: var(--primaereFarve);
+}
+
+@media screen and (min-width: 200px) and (max-width: 480px) {
+.top{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logoforside{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.logoforside img{
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+.tekst{
+    display: flex;
+    flex-direction: column;
+}
+
+.overskrift{
+    text-align: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.footer img{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+}
