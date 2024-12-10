@@ -1,4 +1,5 @@
 
+/* 4 grundfarver */
 :root {
     --primaereFarve: #FCF9F2;
     --sekundaereFarve: #340F0F;
@@ -6,8 +7,102 @@
     --morkebrun: #230902;
 }
 
+body{
+    background-color: var(--primaereFarve);
+    margin: 0; /*fjerner alt margin, som basis*/
+    padding: 0; /*fjerner alt padding, som basis*/
+}
+
+/* Fonts og med korrekt vogt hojde og farve */
+
+
+p{
+    font-family: 'Montserrat'; /* font*/
+    font-size: 16px; /* skrift størrelse */
+    line-height: 2.5; /* Plads mellem linjerne*/
+    color: var(--sekundaereFarve);/* Farve på skriften*/
+} 
+
+h1{
+    font-family: 'Kaftan', sans-serif;
+    font-size: 55px;
+    font-weight: 30; /* vægt på fonten*/
+    color: var(--sekundaereFarve);
+}
+
+h2{
+    font-family:"sigurd";
+    font-weight: 15;
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: var(--sekundaereFarve);
+}
+
+
+/* viewport */
 @media screen and (min-width: 200px) and (max-width: 480px) {
 
+/*Navigation */
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 40px;
+    }
+/* navigation ikon størrelse */ 
+    .top img{
+        max-width: 35px;
+    }
 
+/* foooter */
+
+.footer{
+    display: flex;
+    /* giver boxene luft */
+    justify-content: space-around; 
+    padding-top: 100px;
+    padding-bottom: 25px;
+    position: relative; 
+    /* Footer baggrund svg. */
+    background: url('bolgebaggrund.svg') no-repeat bottom center;
+    color: var(--sekundaereFarve);
+    /* Fjerner overflow */
+    overflow: hidden; 
+    align-items: center;
+}
+
+/* Logo størrelse */
+.footer img{
+width: 80px;
+padding-left: 20px;
+}
+
+/* Info tekst box */
+.info{
+color: var(--primaereFarve);
+text-align: right;
+}
+
+/* Some Box */
+.some{
+display: flex;
+justify-content: flex-end; /* hojre justere */
+gap: 0px;
+padding-top: 35px;
+}
+
+/* Størrelse på SoMe ikoner */
+.some img{
+max-width: 35px;
+}
+
+/* Tekst dekoration på footer info teksten */
+.info p{
+color: var(--primaereFarve);
+font-size: 12px;
+line-height: 1.5;
+margin-bottom: 0px;
+}
 
 }
