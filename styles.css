@@ -44,15 +44,23 @@ body{
         display: flex;
         justify-content: space-around;
         align-items: flex-start; 
-        padding: 50px;
+        padding-top: 100px;
+        padding-bottom: 10px;
         position: relative; 
         background: url('bolgebaggrund.svg') no-repeat bottom center;
         color: var(--sekundaereFarve);
         overflow: hidden; 
+        align-items: center;
 }
 
 .footer img{
     width: 50px;
+}
+
+
+.footer p{
+    color: var(--primaereFarve);
+    text-align: left;
 }
 
 .footerlogo{
