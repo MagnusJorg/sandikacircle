@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --primaereFarve: #FCF9F2;
@@ -8,23 +9,36 @@
 
 body{
     background-color: var(--primaereFarve);
+    margin: 0; /*fjerner alt margin, som basis*/
+    padding: 0; /*fjerner alt padding, som basis*/
+}
+
+p{
+    font-family: 'Montserrat';
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
 .top{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 40px;
+}
+
+.top img{
+    max-width: 35px;
 }
 
 .logoforside{
     display: flex;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-bottom: 200px;
 }
 
 .logoforside img{
-    width: 150px;
+    width: 250px;
     display: flex;
     justify-content: center;
 }
@@ -32,6 +46,10 @@ body{
 .tekst{
     display: flex;
     flex-direction: column;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
 .overskrift{
@@ -43,9 +61,8 @@ body{
 .footer{
         display: flex;
         justify-content: space-around;
-        align-items: flex-start; 
         padding-top: 100px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         position: relative; 
         background: url('bolgebaggrund.svg') no-repeat bottom center;
         color: var(--sekundaereFarve);
@@ -58,16 +75,16 @@ body{
 }
 
 
-.footer p{
+.info{
     color: var(--primaereFarve);
-    text-align: left;
+    text-align: right;
 }
 
-.footerlogo{
+.some{
     display: flex;
-    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
 }
-
 
 
 }
