@@ -38,16 +38,26 @@ body{
     text-align: center;
 }
 
+/* foooter */
+
 .footer{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start; 
+        padding: 50px;
+        position: relative; 
+        background: url('bolgebaggrund.svg') no-repeat bottom center;
+        color: var(--sekundaereFarve);
+        overflow: hidden; 
 }
 
 .footer img{
     width: 50px;
+}
+
+.footerlogo{
     display: flex;
-    justify-content: center;
+    align-items: center;
 }
 
 
