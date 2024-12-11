@@ -37,7 +37,7 @@ p{
 
 h1{
     font-family: 'Kaftan', sans-serif;
-    font-size: 55px;
+    font-size: 75px;
     font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
     margin: 0px;
@@ -50,7 +50,7 @@ h2{
     font-size: 30px;
     color: var(--sekundaereFarve);
     font-weight: 700;
-    margin-top: 0;
+    margin-top: 40px;
 }
 
 h3{
@@ -76,7 +76,6 @@ h4{
 
 /* overskrift */
 .overskrift{
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,28 +84,13 @@ h4{
 }
 
 .overskrift img{
-    max-width: 80%;
-}
-
-/* hold box */
-
-.hold{
-    margin-top: 50px;
-}
-
-.udendorevent {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15%;
-}
-
-.udendorevent p {
-    margin: 0;
+    max-width: 100%;
 }
 
 
 
-/*tilmeld knap */
+
+/*tilbage knap */
 
 .tilmeld-knap {
     background-color: var(--blofarve); /* Baggrundsfarve */
@@ -115,31 +99,19 @@ h4{
     border-radius: 30px; /* Runde hjørner */
     padding: 6px 35px; /* Indvendig afstand */
     font-family: Arial, sans-serif; /* Skrifttype */
-    font-size: 13px; /* Tekststørrelse */
+    font-size: 25px; /* Tekststørrelse */
     font-weight: 400;
     letter-spacing: 1px;
     cursor: pointer; /* Markør ved hover */
 }
 
 .tilmeldbox{
-    padding-top: 10px;
-    display: flex;
-    justify-content: flex-end; /* venstre justere */
-    margin-right: 50px;
-}
-
-
-/* bolgelinje */
-
-.bolgelinjen{
+    padding-top: 30px;
     display: flex;
     justify-content: center;
-    margin-top: 35px;
 }
 
-.bolgelinjen img{
-    max-width: 70%;
-}
+
 
 /*Navigation burger og ikon mand */
     .top{
@@ -151,8 +123,8 @@ h4{
     }
 /* navigation ikon størrelse */ 
     .top img{
-        max-width: 35px;
-        max-height: 20px;
+        max-width: 45px;
+        max-height: 35px;
     }
 
 

@@ -46,7 +46,7 @@ h2{
     font-family:"sigurd";
     font-weight: bold;
     margin-bottom: 0px;
-    margin-top: 20%;
+    margin-top: 12%;
     font-size: 20px;
     color: var(--sekundaereFarve);
 }
@@ -174,10 +174,36 @@ h2{
 
 #kontaktOs{
     font-size: 35px;
+    margin-top: 0;
 }
 
 strong{
     font-weight: bold;
+}
+
+#andreSpoergesmaal{
+    margin: 20% 0 0 0;
+    font-weight: lighter;
+}
+
+#indsaetSpoergesmaal{
+    border-color: #230902;
+    padding: 20px 20px 90px 20px;
+    background: none;
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+
+button{
+    background-color: #0B132B;
+    color: #FCF9F2;
+    border-radius: 20px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 200px;
 }
 
 /* foooter */
