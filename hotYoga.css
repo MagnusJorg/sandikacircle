@@ -166,8 +166,21 @@ h2{
 
 img{
     border-radius: 10%;
+    width: 200px;
 }
 
+#foersteBillede{
+    position: relative; /* Sørg for, at .billedeforan fungerer som en reference for absolut positionering */
+    display: flex;
+    left: 7%; 
+}
+
+#andetBillede{
+    position: absolute; /* Gør det muligt at placere denne sektion uafhængigt */
+    top: 70%; /* Placer det andet billede lidt nede */
+    left: 34%; /* Flyt det andet billede til højre */
+    z-index: 1; /* Sørg for, at det andet billede overlapper det første */
+}
 
 .holdene{
     display: flex;
@@ -184,6 +197,18 @@ button{
     float: right;
 }
 
+.antalTilmeldte{
+    text-decoration: none;
+    font-family:'Montserrat';
+    font-weight: bold;
+    color: #230902;
+}
+
+
+#varighed{
+    font-weight: bold;
+    margin-top: 100px;
+}
 
 
 /* foooter */

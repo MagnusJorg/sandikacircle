@@ -45,7 +45,7 @@ h2{
     font-family:"sigurd";
     font-weight: 15;
     margin-bottom: 0px;
-    font-size: 20px;
+    font-size: 30px;/*Gør font størrelsen større, da den skal være det på den her side specifikt*/
     color: var(--sekundaereFarve);
 }
 
@@ -161,9 +161,13 @@ h2{
 
 }
 
+
+/*   ------- MIDTERSTE INDHOLD ----- */
+
 /* Gør kanterne på billederne runde*/
 img{
     border-radius: 10%;
+    margin-top: 20%;
 }
 
 .holdene{
@@ -190,6 +194,10 @@ button{
     font-family:'Montserrat';
     font-weight: bold;
     color: #230902;
+}
+
+.varighed{
+    font-weight: lighter;
 }
 
 
