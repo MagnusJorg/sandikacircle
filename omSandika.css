@@ -61,10 +61,10 @@ h2{
         padding-top: 40px;
     }
 /* navigation ikon størrelse */ 
-    .top img{
-        max-width: 45px;
-        max-height: 35px;
-    }
+.top img{
+    max-width: 40px;
+    max-height: 35px;
+}
 
 
 /* Menu styling */
@@ -202,7 +202,7 @@ h2{
 
 .yogaimg2{
     position: absolute;
-    top: 1700px;
+    top: 1400px;
     right: 10%;
 }
 

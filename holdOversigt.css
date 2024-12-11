@@ -39,6 +39,7 @@ h1{
     font-size: 55px;
     font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
+    margin: 0;
 }
 
 h2{
@@ -62,11 +63,18 @@ h2{
         padding-top: 40px;
     }
 /* navigation ikon størrelse */ 
-    .top img{
-        max-width: 45px;
-        max-height: 35px;
-    }
+.top img{
+    max-width: 40px;
+    max-height: 35px;
+}
 
+.overskrift{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
 
 /* Menu styling */
 .menu {

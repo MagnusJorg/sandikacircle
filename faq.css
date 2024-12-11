@@ -40,6 +40,7 @@ h1{
     font-size: 55px;
     font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
+    margin: 0;
 }
 
 h2{
@@ -64,10 +65,16 @@ h2{
         padding-top: 40px;
     }
 /* navigation ikon størrelse */ 
-    .top img{
-        max-width: 35px;
-    }
+.top img{
+    max-width: 40px;
+    max-height: 35px;
+}
 
+.overskrift{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
 
 /* Menu styling */
 .menu {
@@ -169,7 +176,7 @@ h2{
 #faq{
     display: flex;
     flex-direction: column;
-    margin: 10%;
+    margin: 0 10% 10% 10%;
 }
 
 #kontaktOs{
@@ -182,8 +189,8 @@ strong{
 }
 
 #andreSpoergesmaal{
-    margin: 20% 0 0 0;
-    font-weight: lighter;
+    margin: 20% 0 5% 0;
+    font-weight: 300;
 }
 
 #indsaetSpoergesmaal{

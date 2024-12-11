@@ -38,6 +38,7 @@ h1{
     font-size: 55px;
     font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
+    margin: 30px 0 0 0;
 }
 
 h2{
@@ -62,8 +63,8 @@ h2{
     }
 /* navigation ikon størrelse */ 
 .top img{
-    max-width: 35px;
-    max-height: 20px;
+    max-width: 40px;
+    max-height: 35px;
 }
 
 
@@ -175,18 +176,13 @@ h2{
 }
 
 /* Hovedoverskrifter */
-.medlemsBetingelser h1 {
-    margin: 0;
-    width: 100%;
-}
 
-/* For den ene h1 til venster og den anden til højer */
-.medlemsBetingelser .h1-venstre {
-    text-align: left; 
-}
-
-.medlemsBetingelser .h1-højre {
-    text-align: right;
+.overskrift{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
 }
 
 /* Sektionstitler */

@@ -54,8 +54,8 @@ h2{
 }
 
 .top img{
-    max-width: 35px;
-    cursor: pointer; /* Marker billederne som klikbare */
+    max-width: 40px;
+    max-height: 35px;
 }
 
 /* Menu styling */
