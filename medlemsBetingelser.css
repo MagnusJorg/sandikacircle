@@ -181,11 +181,11 @@ h2{
 }
 
 /* For den ene h1 til venster og den anden til højer */
-.medlemsBetingelser .h1-venster {
+.medlemsBetingelser .h1-venstre {
     text-align: left; 
 }
 
-.medlemsBetingelser .h1-højer {
+.medlemsBetingelser .h1-højre {
     text-align: right;
 }
 

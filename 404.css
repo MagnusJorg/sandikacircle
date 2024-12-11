@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
+
 @import url("https://p.typekit.net/p.css?s=1&k=gur3pox&ht=tk&f=50750.50754.50757.50759.50761.50762&a=248534216&app=typekit&e=css");
- 
+
 @font-face {
     font-family: 'Kaftan';
     src: url('./fonts/kaftan-trial.otf') format('opentype'); /* Path to the font file */
     font-weight: normal;
     font-style: normal;
 }
+
+
+
 /* 4 grundfarver */
 :root {
     --primaereFarve: #FCF9F2;
@@ -37,19 +40,106 @@ h1{
     font-size: 55px;
     font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
+    margin: 0px;
 }
 
 h2{
     font-family:"sigurd";
     font-weight: 15;
     margin-bottom: 0px;
-    font-size: 20px;
+    font-size: 30px;
     color: var(--sekundaereFarve);
+    font-weight: 700;
+    margin-top: 0;
 }
 
+h3{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Montserrat'; /* font*/
+    color: var(--sekundaereFarve);/* Farve på skriften*/
+    font-weight: 300;
+}
+
+h4{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Montserrat'; /* font*/
+    color: var(--sekundaereFarve);/* Farve på skriften*/
+    font-weight: 500;
+}
 
 /* viewport */
 @media screen and (min-width: 200px) and (max-width: 480px) {
+
+/* overskrift */
+.overskrift{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.overskrift img{
+    max-width: 80%;
+}
+
+/* hold box */
+
+.hold{
+    margin-top: 50px;
+}
+
+.udendorevent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+}
+
+.udendorevent p {
+    margin: 0;
+}
+
+
+
+/*tilmeld knap */
+
+.tilmeld-knap {
+    background-color: var(--blofarve); /* Baggrundsfarve */
+    color: var(--primaereFarve); /* Tekstfarve */
+    border: none; /* Ingen kant */
+    border-radius: 30px; /* Runde hjørner */
+    padding: 6px 35px; /* Indvendig afstand */
+    font-family: Arial, sans-serif; /* Skrifttype */
+    font-size: 13px; /* Tekststørrelse */
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer; /* Markør ved hover */
+}
+
+.tilmeldbox{
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end; /* venstre justere */
+    margin-right: 50px;
+}
+
+
+/* bolgelinje */
+
+.bolgelinjen{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.bolgelinjen img{
+    max-width: 70%;
+}
 
 /*Navigation burger og ikon mand */
     .top{
@@ -62,6 +152,7 @@ h2{
 /* navigation ikon størrelse */ 
     .top img{
         max-width: 35px;
+        max-height: 20px;
     }
 
 
@@ -159,74 +250,8 @@ h2{
 
 }
 
-/*Main*/
+/* foooter */
 
-/* Container til hele sektionen */
-.pris-oversigt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* Overskrifter */
-.pris-oversigt h1 {
-    margin: 0;
-    font-size: 4rem;
-    
-}
-
-.pris-oversigt .venstre {
-    align-self: flex-start;
-}
-
-.pris-oversigt .højre {
-    align-self: flex-end;
-}
-
-/* Kasser */
-.kasse {
-    width: 100%vw; /* Kasserne vil nu være 40% af viewportens bredde */
-    max-width: 400px; /* Kasserne stopper ved en maks bredde af 400px */
-    background-color: var(--blofarve);
-    border-radius: 20px;
-    padding: 20px; /* Plads inde i kassen */
-    margin: 20px; /* Plads omkring kassen */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.kasse h2 {
-    font-size: 2rem;
-    margin-bottom: 1px;
-    color: #FCF9F2;
-    align-self: flex-start; 
-    text-align: left;
-}
-
-.kasse p {
-    text-align: left;
-    margin-bottom: 40px;
-    margin-top: 0%;
-    color: #FCF9F2;
-    align-self: flex-start; 
-    font-size: large;
-    font-weight: 300;
-}
-
-.kasse h1 {
-    color: #FCF9F2;
-    font-size: 2.5rem;
-    font-weight: 50;
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-}
 
 /* foooter */
 

@@ -92,10 +92,10 @@ h4{
 }
 
 .billedeforan{
-    position: relative; /* Sørg for, at .billedeforan fungerer som en reference for absolut positionering */
-    z-index: 1; /* Sørg for, at det første billede ligger bag det andet */
     display: flex;
-    left: 7%;
+    justify-content: center;
+    z-index: 1; /* Sørg for, at det første billede ligger bag det andet */
+    left: 9px;
 }
 
 /* billede foran øverest */
@@ -105,13 +105,51 @@ h4{
     border-radius: 7%;
 }
 
+.udstyr img{
+    max-width: 250px;
+    padding-left: 10%;
+    padding-top: 40px;
+}
+
+.udstyr2 img{
+    max-width: 250px;
+}
+
+.udstyr2{
+    position: relative;
+    max-width: 250px;
+    bottom: 100px;
+    padding-left: 100px;
+}
 
 .billedeforan2 {
     position: absolute; /* Gør det muligt at placere denne sektion uafhængigt */
     top: 51%; /* Placer det andet billede lidt nede */
-    left: 34%; /* Flyt det andet billede til højre */
+    left: 32%; /* Flyt det andet billede til højre */
     z-index: 2; /* Sørg for, at det andet billede overlapper det første */
 }
+
+.lokale{
+    margin-top: 120px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.udstyrtekst{
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.udstyr3{
+    display: flex;
+    justify-content: center;
+}
+
+.udstyr3 img{
+    max-width: 300px;
+}
+
+
 
 
 
