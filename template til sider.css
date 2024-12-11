@@ -93,7 +93,6 @@ h2{
 .menu ul li a {
     text-decoration: none;
     color: #FCF9F2;
-    font-family: 'Kaftan', sans-serif;
     font-size: 30px;
 }
 
@@ -153,52 +152,50 @@ h2{
 
 /* foooter */
 
+
+/* foooter */
+
 .footer{
     display: flex;
-    /* giver boxene luft */
-    justify-content: space-around; 
+    justify-content: space-around;
     padding-top: 100px;
     padding-bottom: 25px;
     position: relative; 
-    /* Footer baggrund svg. */
     background: url('bolgebaggrund.svg') no-repeat bottom center;
     color: var(--sekundaereFarve);
-    /* Fjerner overflow */
     overflow: hidden; 
     align-items: center;
 }
 
-/* Logo størrelse */
 .footer img{
 width: 80px;
 padding-left: 20px;
 }
 
-/* Info tekst box */
+
 .info{
 color: var(--primaereFarve);
 text-align: right;
 }
 
-/* Some Box */
 .some{
 display: flex;
-justify-content: flex-end; /* hojre justere */
+justify-content: flex-end;
 gap: 0px;
 padding-top: 35px;
 }
 
-/* Størrelse på SoMe ikoner */
 .some img{
 max-width: 35px;
 }
 
-/* Tekst dekoration på footer info teksten */
 .info p{
 color: var(--primaereFarve);
 font-size: 12px;
 line-height: 1.5;
 margin-bottom: 0px;
+font-family: 'Montserrat';
 }
 
 }
+
