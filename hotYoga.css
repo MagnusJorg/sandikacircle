@@ -62,7 +62,8 @@ h2{
     }
 /* navigation ikon størrelse */ 
     .top img{
-        max-width: 35px;
+        max-width: 40px;
+        max-height: 35px;
     }
 
 
@@ -161,53 +162,79 @@ h2{
 }
 
 
-
-
-
-img{
-    border-radius: 10%;
-    width: 200px;
-}
-
-#foersteBillede{
-    position: relative; /* Sørg for, at .billedeforan fungerer som en reference for absolut positionering */
+.overskrift{
+    margin-top: 40px;
     display: flex;
-    left: 7%; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
-#andetBillede{
-    position: absolute; /* Gør det muligt at placere denne sektion uafhængigt */
-    top: 70%; /* Placer det andet billede lidt nede */
-    left: 34%; /* Flyt det andet billede til højre */
-    z-index: 1; /* Sørg for, at det andet billede overlapper det første */
+
+.yogaimg{
+    margin-bottom: 100px;
+}
+
+.yogaimg1 img{
+    max-width: 250px;
+    border-radius: 10%;
+}
+
+.yogaimg2 img{
+    max-width: 200px;
+    border-radius: 10%;
+}
+
+.yogaimg1 {
+    display: flex;
+    margin-left: 30px;
+
+}
+
+.yogaimg2{
+    position: absolute;
+    top: 550px;
+    right: 10%;
 }
 
 .holdene{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10%;
+    margin: 0px 30px 0px 30px;
 }
 
-button{
-    background-color: #0B132B;
-    color: #FCF9F2;
-    border-radius: 20px;
-    width: 100px;
-    float: right;
+
+.tilmeld-knap {
+    background-color: var(--blofarve); /* Baggrundsfarve */
+    color: var(--primaereFarve); /* Tekstfarve */
+    border: none; /* Ingen kant */
+    border-radius: 30px; /* Runde hjørner */
+    padding: 6px 35px; /* Indvendig afstand */
+    font-family: Arial, sans-serif; /* Skrifttype */
+    font-size: 13px; /* Tekststørrelse */
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer; /* Markør ved hover */
 }
 
-.antalTilmeldte{
+
+
+.knapantal a{
     text-decoration: none;
     font-family:'Montserrat';
     font-weight: bold;
     color: #230902;
 }
 
+.knapantal{
+    display: flex;
+    justify-content: space-evenly;
+}
 
 #varighed{
     font-weight: bold;
-    margin-top: 100px;
 }
 
 
