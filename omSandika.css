@@ -1,4 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+@import url("https://p.typekit.net/p.css?s=1&k=gur3pox&ht=tk&f=50750.50754.50757.50759.50761.50762&a=248534216&app=typekit&e=css");
+ 
+@font-face {
+    font-family: 'Kaftan';
+    src: url('./fonts/kaftan-trial.otf') format('opentype'); /* Path to the font file */
+    font-weight: normal;
+    font-style: normal;
+}
 /* 4 grundfarver */
 :root {
     --primaereFarve: #FCF9F2;
@@ -34,7 +44,7 @@ h2{
     font-family:"sigurd";
     font-weight: 15;
     margin-bottom: 0px;
-    font-size: 20px;
+    font-size: 30px;
     color: var(--sekundaereFarve);
 }
 
@@ -150,7 +160,64 @@ h2{
 
 }
 
-/* foooter */
+/* Main */
+
+/* container */
+.omSandika {
+    display: flex;
+    flex-direction: column; /* Sørger for lodret placering */
+    align-items: center; /* Centrerer horisontalt */
+    justify-content: flex-start; /* Starter indholdet øverst */
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* Hovedoverskrifter */
+.h1 {
+    margin: 0;
+    width: 100%;
+}
+
+/* For den ene h1 til venster og den anden til højer */
+.h1-venstre {
+    text-align: left; 
+}
+
+.h1-højre {
+    text-align: right;
+}
+
+.laura {
+    max-width: 100%;
+    border-radius: 10%;
+}
+
+
+/* Sektionstitler */
+.h2 {
+    margin-top: 40px; /* Mellemrum mellem sektionen */
+    margin-bottom: 0px;
+    align-self: flex-start; 
+    text-align: left;
+    font-size: 40px;
+}
+
+/* Brødtekst */
+.p {
+    margin-top: 0px;
+    margin-bottom: 30px; 
+    text-align: left; 
+    align-self: flex-start; 
+    word-wrap: break-word;
+
+}
+
+/* Gør at nogen ord/sætninger inde i p bliver bold*/
+strong {
+    font-weight:520; 
+}
 
 
 /* foooter */

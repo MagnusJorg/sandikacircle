@@ -1,76 +1,115 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title> <!-- Sidens title -->
     <script src="js.js" defer></script>
-    <link rel="stylesheet" href="template til sider.css"> <!-- CSS connect -->
+    <link rel="stylesheet" href="omSandika.css"> <!-- CSS connect -->
     <link rel="stylesheet" href="https://use.typekit.net/gur3pox.css"> <!-- Import af sigurd font -->
 </head>
+
 <body>
 
-<!-- Navigation menu -->
-<header>
-    <section class="top">
-        <a href="404.html"><img src="images/logInd.webp" alt="Log Ind"></a>
-        <img id="burgerIkon" src="images/burger.webp" alt="Burger Menu">
-    </section>
-</header>
+    <!-- Navigation menu -->
+    <header>
+        <section class="top">
+            <a href="404.html"><img src="images/logInd.webp" alt="Log Ind"></a>
+            <img id="burgerIkon" src="images/burger.webp" alt="Burger Menu">
+        </section>
+    </header>
 
-<nav id="menu" class="menu">
-    <div class="menuluk" id="lukMenu">×</div>
-    <ul>
-        <!-- Hold -->
-        <li>
-            <a href="#" id="holdButton">Hold</a>
-            <ul id="holdMenu" style="display: none;">
-                <li><a href="tilmelding.html">Tilmelding</a></li>
-                <li><a href="oversigt.html">Oversigt</a></li>
-                <li><a href="pakkeliste.html">Pakkeliste</a></li>
-            </ul>
-        </li>
+    <nav id="menu" class="menu">
+        <div class="menuluk" id="lukMenu"></div>
+        <ul>
+            <!-- Hold -->
+            <li>
+                <a href="#" id="holdButton">Hold</a>
+                <ul id="holdMenu" style="display: none;">
+                    <li><a href="tilmelding.html">Tilmelding</a></li>
+                    <li><a href="oversigt.html">Oversigt</a></li>
+                    <li><a href="pakkeliste.html">Pakkeliste</a></li>
+                </ul>
+            </li>
 
-        <!-- Bliv Medlem -->
-        <li>
-            <a href="#" id="blivMedlemButton">Bliv Medlem</a>
-            <ul id="blivMedlemMenu" style="display: none;">
-                <li><a href="priser.html">Priser</a></li>
-                <li><a href="betingelser.html">Betingelser</a></li>
-            </ul>
-        </li>
+            <!-- Bliv Medlem -->
+            <li>
+                <a href="#" id="blivMedlemButton">Bliv Medlem</a>
+                <ul id="blivMedlemMenu" style="display: none;">
+                    <li><a href="priser.html">Priser</a></li>
+                    <li><a href="betingelser.html">Betingelser</a></li>
+                </ul>
+            </li>
 
-        <!-- Faciliteter -->
-        <li>
-            <a href="#" id="faciliteterButton">Faciliteter</a>
-            <ul id="faciliteterMenu" style="display: none;">
-                <li><a href="faciliteter.html">Faciliteter</a></li>
-                <li><a href="events.html">Events</a></li>
-            </ul>
-        </li>
+            <!-- Faciliteter -->
+            <li>
+                <a href="#" id="faciliteterButton">Faciliteter</a>
+                <ul id="faciliteterMenu" style="display: none;">
+                    <li><a href="faciliteter.html">Faciliteter</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </li>
 
-        <!-- Om Sandika -->
-        <li><a href="om-sandika.html">Om Sandika</a></li>
+            <!-- Om Sandika -->
+            <li><a href="om-sandika.html">Om Sandika</a></li>
 
-        <!-- Kontakt Os -->
-        <li>
-            <a href="#" id="kontaktButton">Kontakt Os</a>
-            <ul id="kontaktMenu" style="display: none;">
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
+            <!-- Kontakt Os -->
+            <li>
+                <a href="#" id="kontaktButton">Kontakt Os</a>
+                <ul id="kontaktMenu" style="display: none;">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
-<!-- Indhold -->
+    <!-- Indhold -->
+    <main>
+
+        <section class="omSandika">
+            <!--En class til hver h1 da de ikke har samme position-->
+            <h1 class="h1-venstre">Om</h1>
+            <h1 class="h1-højre">Sandika</h1>
+
+            <img class="laura" src="images/laura.webp" alt="billede af Laura">
+
+            <!--Strong er til at lave bold skrift-->
+            <h2>Laura Sandika</h2>
+            <p>
+                “ Jeg ved, hvordan det kan føles at løbe hurtigt og glemme sig selv. “
+            </p>
+            <p>
+                Kunne du tænke dig et sted, hvor du kan føle dig hjemme og være en del af et fællesskab, der fokuserer
+                på glæde, ro og styrke fremfor præstation?
+                Det var netop denne tanke, der blev fundamentet for Sandika Circle, og det inspirerede mig til at tage
+                springet og uddanne mig som yogalates instruktør.
+                Mit primære fokus med mine hold at fremme mental såvel som fysisk sundhed, da begge aspekter er lige
+                essentielle for overordnet velvære og trivsel.</p>
+                
+
+            <h2>Værdier</h2>
+            <p><strong>Kom som du er</strong><br>Hos Sandika circle møder vi dig præcis som du er, hvor du er, uden krav
+                eller forventninger.
+
+            <p><strong>Fordybelse</strong><br> Vi guider kvinder til at mærke og forstå deres krops signaler.</p>
+
+            <p><strong>Balance</strong><br>Finde balance gennem fysisk bevægelse og mental ro.</p>
+
+            <h2>Vision</h2>
+            <p>Det handler om at finde en dybere forbindelse til dig selv og andre. Det er et sted, hvor du kan vokse,
+                hvile og finde inspiration - i et rum, hvor kvinder løfter hinanden.
+                Fordi <strong>du</strong> fortjener det.</p>
+
+        </section>
+    </main>
 
 
-
-<!--Footer -->
+    <!--Footer -->
     <footer class="footer">
         <section class="footerlogo">
-        <!--- Logo med link til index.html -->
+            <!--- Logo med link til index.html -->
             <a href="index.html">
                 <img class="logofooter" src="images/logoFooter.webp" alt="">
             </a>
@@ -82,12 +121,13 @@
             <P>Adresse: Lauravej 12, 8000 Aarhus C </p>
 
             <!--- Ikoner til SoMe -->
-                <article class="some">
-                    <img src="images/insta.webp" alt="">
-                    <img src="images/facebook.webp" alt="">
-                </article>
+            <article class="some">
+                <img src="images/insta.webp" alt="">
+                <img src="images/facebook.webp" alt="">
+            </article>
         </section>
     </footer>
 
 </body>
+
 </html>
