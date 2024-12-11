@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title> <!-- Sidens title -->
+    <script src="js.js" defer></script>
+    <link rel="stylesheet" href="template til sider.css"> <!-- CSS connect -->
+    <link rel="stylesheet" href="https://use.typekit.net/gur3pox.css"> <!-- Import af sigurd font -->
+</head>
+
+<body>
+
+    <!-- Navigation menu -->
+    <header>
+        <section class="top">
+            <a href="404.html"><img src="images/logInd.webp" alt="Log Ind"></a>
+            <img id="burgerIkon" src="images/burger.webp" alt="Burger Menu">
+        </section>
+    </header>
+
+    <nav id="menu" class="menu">
+        <div class="menuluk" id="lukMenu">×</div>
+        <ul>
+            <!-- Hold -->
+            <li>
+                <a href="#" id="holdButton">Hold</a>
+                <ul id="holdMenu" style="display: none;">
+                    <li><a href="tilmelding.html">Tilmelding</a></li>
+                    <li><a href="oversigt.html">Oversigt</a></li>
+                    <li><a href="pakkeliste.html">Pakkeliste</a></li>
+                </ul>
+            </li>
+
+            <!-- Bliv Medlem -->
+            <li>
+                <a href="#" id="blivMedlemButton">Bliv Medlem</a>
+                <ul id="blivMedlemMenu" style="display: none;">
+                    <li><a href="priser.html">Priser</a></li>
+                    <li><a href="betingelser.html">Betingelser</a></li>
+                </ul>
+            </li>
+
+            <!-- Faciliteter -->
+            <li>
+                <a href="#" id="faciliteterButton">Faciliteter</a>
+                <ul id="faciliteterMenu" style="display: none;">
+                    <li><a href="faciliteter.html">Faciliteter</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </li>
+
+            <!-- Om Sandika -->
+            <li><a href="om-sandika.html">Om Sandika</a></li>
+
+            <!-- Kontakt Os -->
+            <li>
+                <a href="#" id="kontaktButton">Kontakt Os</a>
+                <ul id="kontaktMenu" style="display: none;">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Indhold -->
+    <main>
+        <section class="pris-oversigt">
+            <!-- Overskrifter -->
+            <h1 class="left">Pris</h1>
+            <h1 class="right">Oversigt</h1>
+
+            <!-- Kasser -->
+            <article class="kasse">
+                <h2>PRØVETIME</h2>
+                <p>Er du nysgerrig på, om yoga eller pilates er noget for dig, men er usikker på, hvor du skal starte?
+                    Book en gratis prøvetime her!</p>
+                <h1>0,-</h1>
+            </article>
+
+            <article class="kasse">
+                <h2>KLIPPEKORT</h2>
+                <p>Elsker du friheden til at vælge selv? Her får du et klippekort med 10 klip, som du kan bruge, lige
+                    når du vil.</p>
+                <h1>900,-</h1>
+            </article>
+
+            <article class="kasse">
+                <h2>MEDLEMSSKAB</h2>
+                <p>Er du klar til at gøre noget godt for dig selv? Med medlemsskab får du ubegrænset adgang til holdene
+                    og et stærkt fællesskab.</p>
+                <h1>500,-</h1>
+            </article>
+        </section>
+    </main>
+
+    <!--Footer -->
+    <footer class="footer">
+        <section class="footerlogo">
+            <!--- Logo med link til index.html -->
+            <a href="index.html">
+                <img class="logofooter" src="images/logoFooter.webp" alt="">
+            </a>
+        </section>
+        <!--- Informationer -->
+        <section class="info">
+            <p>Tlf: +45 10 90 23 40</p>
+            <p>Åbningstider: Man-Søn 05-20</p>
+            <P>Adresse: Lauravej 12, 8000 Aarhus C </p>
+
+            <!--- Ikoner til SoMe -->
+            <article class="some">
+                <img src="images/insta.webp" alt="">
+                <img src="images/facebook.webp" alt="">
+            </article>
+        </section>
+    </footer>
+
+</body>
+
+</html>
