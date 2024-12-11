@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ 
+@import url("https://p.typekit.net/p.css?s=1&k=gur3pox&ht=tk&f=50750.50754.50757.50759.50761.50762&a=248534216&app=typekit&e=css");
+ 
+@font-face {
+    font-family: 'Kaftan';
+    src: url('./fonts/kaftan-trial.otf') format('opentype'); /* Path to the font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 4 grundfarver */
+:root {
+    --primaereFarve: #FCF9F2;
+    --sekundaereFarve: #340F0F;
+    --blofarve: #0B132B;
+    --morkebrun: #230902;
+}
+
+body{
+    background-color: var(--primaereFarve);
+    margin: 0; /*fjerner alt margin, som basis*/
+    padding: 0; /*fjerner alt padding, som basis*/
+}
+
+/* Fonts og med korrekt vogt hojde og farve */
+
+
+p{
+    font-family: 'Montserrat'; /* font*/
+    font-size: 16px; /* skrift størrelse */
+    line-height: 2.5; /* Plads mellem linjerne*/
+    color: var(--sekundaereFarve);/* Farve på skriften*/
+} 
+
+h1{
+    font-family: 'Kaftan', sans-serif;
+    font-size: 55px;
+    font-weight: 30; /* vægt på fonten*/
+    color: var(--sekundaereFarve);
+}
+
+h2{
+    font-family:"sigurd";
+    font-weight: 15;
+    margin-bottom: 0px;
+    font-size: 20px;
+    color: var(--sekundaereFarve);
+}
+
+
+/* viewport */
+@media screen and (min-width: 200px) and (max-width: 480px) {
+
+/*Navigation burger og ikon mand */
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 40px;
+    }
+/* navigation ikon størrelse */ 
+    .top img{
+        max-width: 35px;
+    }
+
+
+/* Menu styling */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Skjult udenfor skærmen */
+    width: 60%;
+    height: 100%;
+    background-color: #0B132B;
+    color: #FCF9F2;
+    transition: right 0.5s ease-in-out; /* hastighed på menu slider */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 30px 0 0 30px; /* runde hjorner*/
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* spreeder links */
+    height: 80%; /* hojden på selve menu boxen */
+    margin-top: 0px;
+}
+
+/* plads mellem x og tekst */
+.menu ul li {
+    margin: 20px 0;
+}
+
+/* dekoration af tekst*/
+.menu ul li a {
+    text-decoration: none;
+    color: #FCF9F2;
+    font-size: 30px;
+}
+
+/* Luk-knap */
+.menuluk {
+    align-self: flex-end;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Aktiv menu */
+.menu.active {
+    right: 0; /* Glid ind på skærmen */
+}
+
+
+/* Skjul dropdown-menuen */
+.hidden {
+    display: none;
+}
+
+/* Styling for dropdown-menu */
+#holdMenu a {
+    padding-right: 20px; /* Indrykning for at skille den fra hovedmenuen */
+    font-size: 25px; /* størrelse på font */
+    font-family: 'Montserrat'; /* font */
+    font-weight: 15; /* font vægt */
+    color: var(--primaereFarve); /* font farve */
+
+}
+
+#blivMedlemMenu a {
+    padding-right: 20px;  
+    font-family: 'Montserrat';
+    font-weight: 15;
+    color: var(--primaereFarve);
+
+}
+
+#faciliteterMenu a {
+    padding-right: 20px; 
+    font-size: 25px; 
+    font-family: 'Montserrat';
+    font-weight: 15;
+    color: var(--primaereFarve);
+
+}
+
+#kontaktMenu a {
+    padding-right: 20px; 
+    font-size: 25px; 
+    font-family: 'Montserrat';
+    font-weight: 15;
+    color: var(--primaereFarve);
+
+}
+
+
+
+
+
+img{
+    border-radius: 10%;
+}
+
+
+.holdene{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10%;
+}
+
+button{
+    background-color: #0B132B;
+    color: #FCF9F2;
+    border-radius: 20px;
+    width: 100px;
+    float: right;
+}
+
+
+
+/* foooter */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    padding-bottom: 25px;
+    position: relative; 
+    background: url('bolgebaggrund.svg') no-repeat bottom center;
+    color: var(--sekundaereFarve);
+    overflow: hidden; 
+    align-items: center;
+}
+
+.footer img{
+width: 80px;
+padding-left: 20px;
+}
+
+
+.info{
+color: var(--primaereFarve);
+text-align: right;
+}
+
+.some{
+display: flex;
+justify-content: flex-end;
+gap: 0px;
+padding-top: 35px;
+}
+
+.some img{
+max-width: 35px;
+}
+
+.info p{
+color: var(--primaereFarve);
+font-size: 12px;
+line-height: 1.5;
+margin-bottom: 0px;
+font-family: 'Montserrat';
+}
+
+}
+
