@@ -42,7 +42,7 @@ h1{
 
 h2{
     font-family:"sigurd";
-    font-weight: 15;
+    font-weight: 100;
     margin-bottom: 0px;
     font-size: 20px;
     color: var(--sekundaereFarve);
@@ -61,9 +61,10 @@ h2{
         padding-top: 40px;
     }
 /* navigation ikon størrelse */ 
-    .top img{
-        max-width: 35px;
-    }
+.top img{
+    max-width: 35px;
+    max-height: 20px;
+}
 
 
 /* Menu styling */
@@ -160,56 +161,54 @@ h2{
 
 }
 
+/* Main */
 
-
-
-
-img{
-    border-radius: 10%;
-    width: 200px;
-}
-
-#foersteBillede{
-    position: relative; /* Sørg for, at .billedeforan fungerer som en reference for absolut positionering */
+/* container */
+.medlemsBetingelser {
     display: flex;
-    left: 7%; 
+    flex-direction: column; /* Sørger for lodret placering */
+    align-items: center; /* Centrerer horisontalt */
+    justify-content: flex-start; /* Starter indholdet øverst */
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-#andetBillede{
-    position: absolute; /* Gør det muligt at placere denne sektion uafhængigt */
-    top: 70%; /* Placer det andet billede lidt nede */
-    left: 34%; /* Flyt det andet billede til højre */
-    z-index: 1; /* Sørg for, at det andet billede overlapper det første */
+/* Hovedoverskrifter */
+.medlemsBetingelser h1 {
+    margin: 0;
+    width: 100%;
 }
 
-.holdene{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10%;
+/* For den ene h1 til venster og den anden til højer */
+.medlemsBetingelser .h1-venstre {
+    text-align: left; 
 }
 
-button{
-    background-color: #0B132B;
-    color: #FCF9F2;
-    border-radius: 20px;
-    width: 100px;
-    float: right;
+.medlemsBetingelser .h1-højre {
+    text-align: right;
 }
 
-.antalTilmeldte{
-    text-decoration: none;
-    font-family:'Montserrat';
-    font-weight: bold;
-    color: #230902;
+/* Sektionstitler */
+.medlemsBetingelser h2 {
+    margin-top: 40px; /* Mellemrum mellem sektionen */
+    margin-bottom: 0px;
+    align-self: flex-start; 
 }
 
+/* Brødtekst */
+.medlemsBetingelser p {
+    margin-top: 0px;
+    margin-bottom: 30px; 
+    text-align: left; 
+    align-self: flex-start; 
+    word-wrap: break-word;
 
-#varighed{
-    font-weight: bold;
-    margin-top: 100px;
 }
-
+/* Gør at nogen ord/sætninger inde i p bliver bold*/
+strong {
+    font-weight:520; 
+}
 
 /* foooter */
 
