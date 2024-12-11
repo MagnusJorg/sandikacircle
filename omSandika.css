@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
-@import url("https://p.typekit.net/p.css?s=1&k=gur3pox&ht=tk&f=50750.50754.50757.50759.50761.50762&a=248534216&app=typekit&e=css");
- 
-@font-face {
-    font-family: 'Kaftan';
-    src: url('./fonts/kaftan-trial.otf') format('opentype'); /* Path to the font file */
-    font-weight: normal;
-    font-style: normal;
-}
+
 /* 4 grundfarver */
 :root {
     --primaereFarve: #FCF9F2;
@@ -60,10 +51,9 @@ h2{
         padding-top: 40px;
     }
 /* navigation ikon størrelse */ 
-.top img{
-    max-width: 35px;
-    max-height: 20px;
-}
+    .top img{
+        max-width: 35px;
+    }
 
 
 /* Menu styling */
@@ -160,73 +150,8 @@ h2{
 
 }
 
-/*Main*/
+/* foooter */
 
-/* Container til hele sektionen */
-.pris-oversigt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-/* Overskrifter */
-.pris-oversigt h1 {
-    margin: 0;
-    font-size: 4rem;
-    
-}
-
-.pris-oversigt .venstre {
-    align-self: flex-start;
-}
-
-.pris-oversigt .højre {
-    align-self: flex-end;
-}
-
-/* Kasser */
-.kasse {
-    background-color: var(--blofarve);
-    border-radius: 20px;
-    padding: 25px; /* Plads inde i kassen */
-    margin: 20px; /* Plads omkring kassen */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.kasse h2 {
-    font-size: 2rem;
-    margin-bottom: 0px; /* Meget lille afstand mellem h2 og p */
-    color: #FCF9F2;
-    align-self: flex-start; 
-    text-align: left;
-}
-
-.kasse p {
-    text-align: left;
-    margin-top: 0; /* Brug 0 uden % */
-    margin-bottom: 60px; /* For mere afstand under p */
-    color: #FCF9F2;
-    align-self: flex-start; 
-    font-size: large;
-    font-weight: 300;
-    line-height: 2.5; /* Juster linjehøjde for at kontrollere afstanden mellem linjer */
-}
-
-.kasse h1 {
-    color: #FCF9F2;
-    font-size: 2.5rem;
-    font-weight: 50;
-    position: absolute;
-    bottom: 15px;
-    right: 20px;
-}
 
 /* foooter */
 
