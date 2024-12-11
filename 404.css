@@ -87,25 +87,10 @@ h4{
     max-width: 100%;
 }
 
-/* hold box */
-
-.hold{
-    margin-top: 50px;
-}
-
-.udendorevent {
-    display: flex;
-    flex-direction: column;
-    margin-left: 15%;
-}
-
-.udendorevent p {
-    margin: 0;
-}
 
 
 
-/*tilmeld knap */
+/*tilbage knap */
 
 .tilmeld-knap {
     background-color: var(--blofarve); /* Baggrundsfarve */
@@ -114,7 +99,7 @@ h4{
     border-radius: 30px; /* Runde hjørner */
     padding: 6px 35px; /* Indvendig afstand */
     font-family: Arial, sans-serif; /* Skrifttype */
-    font-size: 30px; /* Tekststørrelse */
+    font-size: 25px; /* Tekststørrelse */
     font-weight: 400;
     letter-spacing: 1px;
     cursor: pointer; /* Markør ved hover */
