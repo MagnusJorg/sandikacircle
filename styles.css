@@ -123,7 +123,7 @@ h2{
 #holdMenu a {
     padding-right: 20px; /* Indrykning for at skille den fra hovedmenuen */
     font-size: 25px; 
-    font-family:"sigurd";
+    font-family: 'Montserrat';
     font-weight: 15;
     color: var(--primaereFarve);
 
@@ -132,7 +132,7 @@ h2{
 #blivMedlemMenu a {
     padding-right: 20px; /* Indrykning for at skille den fra hovedmenuen */
     font-size: 25px; 
-    font-family:"sigurd";
+    font-family: 'Montserrat';
     font-weight: 15;
     color: var(--primaereFarve);
 
@@ -141,7 +141,7 @@ h2{
 #faciliteterMenu a {
     padding-right: 20px; /* Indrykning for at skille den fra hovedmenuen */
     font-size: 25px; 
-    font-family:"sigurd";
+    font-family: 'Montserrat';
     font-weight: 15;
     color: var(--primaereFarve);
 
@@ -150,7 +150,7 @@ h2{
 #kontaktMenu a {
     padding-right: 20px; /* Indrykning for at skille den fra hovedmenuen */
     font-size: 25px; 
-    font-family:"sigurd";
+    font-family: 'Montserrat';
     font-weight: 15;
     color: var(--primaereFarve);
 
