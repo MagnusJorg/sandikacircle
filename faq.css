@@ -174,10 +174,29 @@ h2{
 
 #kontaktOs{
     font-size: 35px;
+    margin-top: 0;
 }
 
 strong{
     font-weight: bold;
+}
+
+#andreSpoergesmaal{
+    margin: 20% 0 0 0;
+}
+
+#indsaetSpoergesmaal{
+    border-color: #230902;
+    border-radius: 20%;
+}
+
+
+button{
+    background-color: #0B132B;
+    color: #FCF9F2;
+    border-radius: 20px;
+    width: 100px;
+    float: right;
 }
 
 /* foooter */
