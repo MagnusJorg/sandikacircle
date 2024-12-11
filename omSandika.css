@@ -1,14 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
- 
-@import url("https://p.typekit.net/p.css?s=1&k=gur3pox&ht=tk&f=50750.50754.50757.50759.50761.50762&a=248534216&app=typekit&e=css");
- 
-@font-face {
-    font-family: 'Kaftan';
-    src: url('./fonts/kaftan-trial.otf') format('opentype'); /* Path to the font file */
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 /* 4 grundfarver */
 :root {
@@ -32,7 +21,6 @@ p{
     font-size: 16px; /* skrift størrelse */
     line-height: 2.5; /* Plads mellem linjerne*/
     color: var(--sekundaereFarve);/* Farve på skriften*/
-    margin-top: 0%;
 } 
 
 h1{
@@ -44,9 +32,8 @@ h1{
 
 h2{
     font-family:"sigurd";
-    font-weight: bold;
+    font-weight: 15;
     margin-bottom: 0px;
-    margin-top: 20%;
     font-size: 20px;
     color: var(--sekundaereFarve);
 }
@@ -163,41 +150,8 @@ h2{
 
 }
 
-/* ---- MIDTERSTE DEL ----- */
+/* foooter */
 
-
-#faq{
-    display: flex;
-    flex-direction: column;
-    margin: 10%;
-}
-
-#kontaktOs{
-    font-size: 35px;
-    margin-top: 0;
-}
-
-strong{
-    font-weight: bold;
-}
-
-#andreSpoergesmaal{
-    margin: 20% 0 0 0;
-}
-
-#indsaetSpoergesmaal{
-    border-color: #230902;
-    border-radius: 20%;
-}
-
-
-button{
-    background-color: #0B132B;
-    color: #FCF9F2;
-    border-radius: 20px;
-    width: 100px;
-    float: right;
-}
 
 /* foooter */
 
