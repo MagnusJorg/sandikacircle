@@ -1,3 +1,4 @@
+/*Importerer de forskellige fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url("https://p.typekit.net/p.css?s=1&k=gur3pox&ht=tk&f=50750.50754.50757.50759.50761.50762&a=248534216&app=typekit&e=css");
@@ -11,7 +12,7 @@
 }
 
 
-/* 4 grundfarver */
+/* Definerer 4 grundfarver */
 :root {
     --primaereFarve: #FCF9F2;
     --sekundaereFarve: #340F0F;
@@ -28,51 +29,40 @@ body {
     width: 100vw;
 }
 
-/* Fonts og med korrekt vogt hojde og farve */
-
+/* Definerer fonts med korrekt vægt højde og farve */
 
 p {
-    font-family: 'Montserrat';
-    /* font*/
-    font-size: 16px;
-    /* skrift størrelse */
-    line-height: 2.5;
-    /* Plads mellem linjerne*/
-    color: var(--sekundaereFarve);
-    /* Farve på skriften*/
+    font-family: 'Montserrat';/* font*/
+    font-size: 16px;/* skrift størrelse */
+    line-height: 2.5; /* Plads mellem linjerne*/
+    color: var(--sekundaereFarve); /* Farven på skriften*/
 }
 
 h1 {
     font-family: 'Kaftan', sans-serif;
     font-size: 55px;
-    font-weight: 30;
-    /* vægt på fonten*/
+    font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
     margin: 0;
-    position: relative;
-    /*Sætter den til position relative, da */
+    position: relative; /*Sætter den til position relative, da den skal ændres på vha. javascript */
 }
 
 h2 {
     font-family: "sigurd";
     font-weight: 15;
     margin-bottom: 0px;
-    font-size: 30px;
-    /*Gør font størrelsen større, da den skal være det på den her side specifikt*/
+    font-size: 30px; /*Gør font størrelsen større, da den skal være det på den her side specifikt*/
     color: var(--sekundaereFarve);
 }
 
 
-/* viewport */
+/* ---- BODY DELEN ---- */
+
+
+/* Sørger for at contentet er tilpasset en mobilskærm (viewport) */
 @media screen and (min-width: 200px) and (max-width: 480px) {
 
-    html,
-    body {
-        overflow-x: hidden;
-        /* Forhindrer horisontal scroll */
-    }
-
-    /*Navigation burger og ikon mand */
+    /* Placerer af navigation burger og log ind ikon */
     .top {
         display: flex;
         justify-content: space-between;
@@ -81,53 +71,49 @@ h2 {
         padding-top: 40px;
     }
 
-    /* navigation ikon størrelse */
+    /* Tilpasser navigation ikon størrelse */
     .top img {
         max-width: 40px;
         max-height: 35px;
     }
 
+    /* Placering af overskriften */
     .overskrift {
         margin-bottom: 0px;
         margin-top: 40px;
     }
 
 
+    /* MENU DELEN */
 
-    /* Menu styling */
+    /* Styling af menuen */
     .menu {
         position: fixed;
         top: 0;
-        right: -100%;
-        /* Skjult udenfor skærmen */
+        right: -100%; /* Skjult udenfor skærmen */
         width: 60%;
         height: 100%;
         background-color: #0B132B;
         color: #FCF9F2;
-        transition: right 0.5s ease-in-out;
-        /* hastighed på menu slider */
-        z-index: 1000;
+        transition: right 0.5s ease-in-out; /* Hastighed på menu slider */
+        z-index: 1;
         display: flex;
         flex-direction: column;
         padding: 20px;
-        border-radius: 30px 0 0 30px;
-        /* runde hjorner*/
+        border-radius: 30px 0 0 30px; /* runde hjorner*/
     }
 
     .menu ul {
-        list-style: none;
-        padding: 0;
-        text-align: end;
+        list-style: none; /* Fjerner standard punkttegn fra listen */
+        text-align: end; /* Placerer teksten i højre side*/
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        /* spreeder links */
-        height: 80%;
-        /* hojden på selve menu boxen */
+        justify-content: space-between; /* Tilføjer whitespace mellem links */
+        height: 80%; /* tilpasser højden på selve menu boxen */
         margin-top: 0px;
     }
 
-    /* plads mellem x og tekst */
+    /* Plads mellem x og tekst */
     .menu ul li {
         margin: 20px 0;
     }
@@ -137,6 +123,7 @@ h2 {
         text-decoration: none;
         color: #FCF9F2;
         font-size: 30px;
+        font-family:'Kaftan', sans-serif;
     }
 
     /* Luk-knap */
@@ -200,16 +187,18 @@ h2 {
     }
 
 
-    /*   ------- MIDTERSTE INDHOLD ----- */
+    /*   ------- INDHOLDET ----- */
+
+    html,
+    body {
+        overflow-x: hidden; /* Forhindrer horisontal scroll */
+    }
 
 
-
+    /*Placering af overskriften*/
     #ordEt {
         margin-left: 50px;
-        position: relative;
-        /* Sørger for, at det holder sig inden for parent-elementet */
-        right: 0;
-        /* Fjerner overskud til højre */
+        position: relative;/* Sørger for, at det holder sig inden for parent-elementet */
     }
 
     #ordTo {
@@ -218,11 +207,12 @@ h2 {
 
 
     /* Gør kanterne på billederne runde*/
-
     img {
         border-radius: 10%;
     }
 
+
+    /* Placering af holdene */
     .holdene {
         display: flex;
         flex-direction: column;
@@ -231,6 +221,7 @@ h2 {
         margin-top: 0%;
     }
 
+    /* Styling af holdene */
     .holdbillede {
         display: flex;
         justify-content: center;
@@ -239,36 +230,44 @@ h2 {
         margin-top: 40px;
     }
 
-    p {
-        margin-top: 0;
-    }
 
+    /*Styler billederne i holdende*/
     .holdimg {
         display: flex;
     }
 
-    button {
-        background-color: #0B132B;
-        color: #FCF9F2;
-        border-radius: 20px;
-        width: 100px;
-        float: right;
+
+    /*Fjerner margin i toppen*/
+    p {
+        margin-top: 0;
     }
 
+    
+    /*Styling af læs mere*/
     .LaesMere {
         text-decoration: none;
         font-family: 'Montserrat';
         font-weight: bold;
         color: #230902;
     }
+    
+    /* Styling og placering af CTA-knap */
+    button {
+            background-color: #0B132B;
+            color: #FCF9F2;
+            border-radius: 20px;
+            width: 100px;
+            float: right; /*Placerer den i højre hjørne*/
+        }
 
-
-    strong {
+    /*Styler varighed til at fremstå tyndere*/
+    .varighed {
         font-weight: lighter;
     }
 
 
-    /* FOOTER */
+
+    /* ---- FOOTER ---- */
 
     .footer {
         display: flex;
@@ -282,6 +281,7 @@ h2 {
         align-items: center;
     }
 
+    /*Styling af logo billedet*/
     .footer img {
         width: 80px;
         padding-left: 20px;
@@ -293,6 +293,7 @@ h2 {
         text-align: right;
     }
 
+    /*Placering af sociale medier billederne*/
     .some {
         display: flex;
         justify-content: flex-end;
@@ -300,6 +301,7 @@ h2 {
         padding-top: 35px;
     }
 
+    /*Styling af sociale medier billederne*/
     .some img {
         max-width: 35px;
     }
