@@ -23,6 +23,7 @@ body{
     background-color: var(--primaereFarve);
     margin: 0; /*fjerner alt margin, som basis*/
     padding: 0; /*fjerner alt padding, som basis*/
+    width: 100vw;
 }
 
 /* Fonts og med korrekt vogt hojde og farve */
@@ -41,6 +42,7 @@ h1{
     font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
     margin: 0px;
+    position: relative;
 }
 
 h2{
@@ -255,10 +257,33 @@ video {
 
 }
 
-/* foooter */
+
+ /*   ------- INDHOLDET ----- */
+ html,
+ body {
+     overflow-x: hidden; /* Forhindrer horisontal scroll */
+ }
+
+ #ordEt{
+    position: relative; /* Sørger for, at det holder sig inden for parent-elementet */
+    right: 0; /* Fjerner overskud til højre */
+    margin: 0px 140px -30px 90px;
+    }
+
+#ordTo{
+    margin-left: 145px;
+    margin-top: 0px;
+}
+    
+.overskrift{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
 
 
-/* foooter */
+
+/* ---- FOOTER ---- */
 
 .footer{
     display: flex;
