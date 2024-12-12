@@ -95,20 +95,45 @@ h4{
     overflow: hidden; /* Sørg for, at figurerne ikke stikker udenfor */
 }
 
-.paralaxbillede2{
+.paralaxbillede2 {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    overflow: hidden; /* Skjul alt, der går udenfor containeren */
 }
 
 .paralaxbillede2 img{
-    max-width: 80%;
-    max-height: 500;
+    max-width: 300px;
+    max-height: 500px;
 }
 
 .paralaxbillede1 img{
    width: 300px;
     max-height: 500px;
+}
+
+
+/* figure der bevæger sig i BMO sektion */
+.paralaxBmo1,
+.paralaxBmo2 {
+    position: absolute;
+    z-index: 1000;
+}
+
+.paralaxBmo1 {
+    top: 900px; /* Startposition */
+    left: -45%; /* Placering udenfor venstre kant */
+    width: 700px; /* Justér størrelse */
+}
+
+.paralaxBmo2 {
+    top: 1080px; /* Startposition */
+    right: -40%; /* Placering udenfor højre kant */
+    width: 700px; /* Justér størrelse */
+}
+
+.paralaxBmo2 img {   
+    width: 700px; /* Justér størrelse */
 }
 
 /* figure der bevæger sig */
@@ -169,20 +194,12 @@ h4{
     display: flex;
     justify-content: flex-end; /* venstre justere */
     margin-right: 50px;
+    margin-bottom: 50px;
 }
 
 
 /* bolgelinje */
 
-.bolgelinjen{
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-}
-
-.bolgelinjen img{
-    max-width: 70%;
-}
 
 /*Navigation burger og ikon mand */
     .top{
