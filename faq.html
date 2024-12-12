@@ -1,101 +1,107 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title> <!-- Sidens title -->
+    <script src="faq.js" defer></script>
     <script src="js.js" defer></script>
     <link rel="stylesheet" href="faq.css"> <!-- CSS connect -->
     <link rel="stylesheet" href="https://use.typekit.net/gur3pox.css"> <!-- Import af sigurd font -->
 </head>
+
 <body>
 
-<!-- Navigation menu -->
-<header>
-    <section class="top">
-        <a href="404.html"><img src="images/logInd.webp" alt="Log Ind"></a>
-        <img id="burgerIkon" src="images/burger.webp" alt="Burger Menu">
+    <!-- Navigation menu -->
+    <header>
+        <section class="top">
+            <a href="404.html"><img src="images/logInd.webp" alt="Log Ind"></a>
+            <img id="burgerIkon" src="images/burger.webp" alt="Burger Menu">
+        </section>
+    </header>
+
+    <nav id="menu" class="menu">
+        <div class="menuluk" id="lukMenu"></div>
+        <ul>
+            <!-- Hold -->
+            <li>
+                <a href="#" id="holdButton">Hold</a>
+                <ul id="holdMenu" style="display: none;">
+                    <li><a href="tilmeld.html">Tilmelding</a></li>
+                    <li><a href="holdOversigt.html">Oversigt</a></li>
+                    <li><a href="pakkeliste.html">Pakkeliste</a></li>
+                </ul>
+            </li>
+
+            <!-- Bliv Medlem -->
+            <li>
+                <a href="#" id="blivMedlemButton">Bliv Medlem</a>
+                <ul id="blivMedlemMenu" style="display: none;">
+                    <li><a href="prisOversigt.html">Priser</a></li>
+                    <li><a href="medlemsBetingelser.html">Betingelser</a></li>
+                </ul>
+            </li>
+
+            <!-- Faciliteter -->
+            <li>
+                <a href="#" id="faciliteterButton">Faciliteter</a>
+                <ul id="faciliteterMenu" style="display: none;">
+                    <li><a href="faciliteter.html">Faciliteter</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </li>
+
+            <!-- Om Sandika -->
+            <li><a href="omSandika.html">Om Sandika</a></li>
+
+            <!-- Kontakt Os -->
+            <li>
+                <a href="#" id="kontaktButton">Kontakt Os</a>
+                <ul id="kontaktMenu" style="display: none;">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="faq.html">Kontakt</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!-- Indhold -->
+
+    <section class="overskrift">
+        <h1>FAQ</h1>
     </section>
-</header>
-
-<nav id="menu" class="menu">
-    <div class="menuluk" id="lukMenu">×</div>
-    <ul>
-        <!-- Hold -->
-        <li>
-            <a href="#" id="holdButton">Hold</a>
-            <ul id="holdMenu" style="display: none;">
-                <li><a href="tilmeld.html">Tilmelding</a></li>
-                <li><a href="holdOversigt.html">Oversigt</a></li>
-                <li><a href="pakkeliste.html">Pakkeliste</a></li>
-            </ul>
-        </li>
-
-        <!-- Bliv Medlem -->
-        <li>
-            <a href="#" id="blivMedlemButton">Bliv Medlem</a>
-            <ul id="blivMedlemMenu" style="display: none;">
-                <li><a href="prisOversigt.html">Priser</a></li>
-                <li><a href="medlemsBetingelser.html">Betingelser</a></li>
-            </ul>
-        </li>
-
-        <!-- Faciliteter -->
-        <li>
-            <a href="#" id="faciliteterButton">Faciliteter</a>
-            <ul id="faciliteterMenu" style="display: none;">
-                <li><a href="faciliteter.html">Faciliteter</a></li>
-                <li><a href="events.html">Events</a></li>
-            </ul>
-        </li>
-
-        <!-- Om Sandika -->
-        <li><a href="omSandika.html">Om Sandika</a></li>
-
-        <!-- Kontakt Os -->
-        <li>
-            <a href="#" id="kontaktButton">Kontakt Os</a>
-            <ul id="kontaktMenu" style="display: none;">
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="faq.html">Kontakt</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-<!-- Indhold -->
-
-<section class="overskrift">
-    <h1>FAQ</h1>
-</section>
 
 
-<section id="faq">
-<h2>Kan man tilmelde sig events uden at være medlem?</h2>
-<p>Ja, det kan du sagtens, dog har medlemmer førsteret til de events vi tilbyder. Prisen for events varierer og <strong>kan ses her.</strong> </p>
+    <section id="faq">
+        <h2>Kan man tilmelde sig events uden at være medlem?</h2>
+        <p>Ja, det kan du sagtens, dog har medlemmer førsteret til de events vi tilbyder. Prisen for events varierer og
+            <strong>kan ses her.</strong> </p>
 
-<h2>Hvad er jeres frameldingpolitik til hold og events?</h2>
-<p>Man har mulighed for at framelde sig et tilmeldt hold <strong>senest 2 dage </strong> inden holdet eller eventet, så andre har mulighed for at tilmelde sig.</p>
+        <h2>Hvad er jeres frameldingpolitik til hold og events?</h2>
+        <p>Man har mulighed for at framelde sig et tilmeldt hold <strong>senest 2 dage </strong> inden holdet eller
+            eventet, så andre har mulighed for at tilmelde sig.</p>
 
-<h2>Er der en bindingsperiode?</h2>
-<p>Nej der er ingen bindingsperiode - det er helt okay at ombestemme sig!</p>
+        <h2>Er der en bindingsperiode?</h2>
+        <p>Nej der er ingen bindingsperiode - det er helt okay at ombestemme sig!</p>
 
-<h2>Jeg er nybegynder, kan jeg godt følge med?</h2>
-<p>Ja, helt sikkert! Vores hold og events er tilrettelagt, så alle niveauer kan være med, også nybegyndere.</p>
+        <h2>Jeg er nybegynder, kan jeg godt følge med?</h2>
+        <p>Ja, helt sikkert! Vores hold og events er tilrettelagt, så alle niveauer kan være med, også nybegyndere.</p>
 
-<p id="andreSpoergesmaal">Har du <br> yderligere spørgsmål?</p>
+        <p id="andreSpoergesmaal">Har du <br> yderligere spørgsmål?</p>
 
-<h2 id="kontaktOs">KONTAKT OS</h2>
+        <h2 id="kontaktOs">KONTAKT OS</h2>
 
-<input type="text" placeholder="Skriv dit spørgsmål her" id="indsaetSpoergesmaal">
-<button>SEND</button>
+        <input type="text" placeholder="Skriv dit spørgsmål her" id="indsaetSpoergesmaal">
+        <!-- Når der bliver klikket på denne knap kommer der alert-->
+        <button id="sendButton">SEND</button>
 
-</section>
+    </section>
 
 
-<!--Footer -->
+    <!--Footer -->
     <footer class="footer">
         <section class="footerlogo">
-        <!--- Logo med link til index.html -->
+            <!--- Logo med link til index.html -->
             <a href="index.html">
                 <img class="logofooter" src="images/logoFooter.webp" alt="">
             </a>
@@ -107,12 +113,13 @@
             <P>Adresse: Lauravej 12, 8000 Aarhus C </p>
 
             <!--- Ikoner til SoMe -->
-                <article class="some">
-                    <img src="images/insta.webp" alt="">
-                    <img src="images/facebook.webp" alt="">
-                </article>
+            <article class="some">
+                <img src="images/insta.webp" alt="">
+                <img src="images/facebook.webp" alt="">
+            </article>
         </section>
     </footer>
 
 </body>
+
 </html>
