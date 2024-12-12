@@ -204,13 +204,52 @@ strong{
 }
 
 
-button{
+#sendButton{
     background-color: #0B132B;
     color: #FCF9F2;
     border-radius: 20px;
     width: 100px;
     margin-top: 20px;
     margin-left: 200px;
+}
+
+/* Styling til alert-overlay */
+#alert-overlay {
+    position: fixed; /*dækker hele skærmen, selv når du scroller*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Mørk baggrund */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ligger sig øverst på siden */
+}
+
+/* Styling til selve alert-boksen */
+#alert-box {
+    width: 250px;
+    height: 130px;
+    background-color: var(--blofarve); /* Lys baggrund */
+    padding: 20px;
+    border-radius: 10px; /* Rundede hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Skygge */
+    text-align: center;
+}
+
+#alert-box p {
+    color: var(--primaereFarve);
+    font-size: 25px;
+}
+
+#alert-box button {
+    padding: 3px 40px;
+    background-color: var(--primaereFarve); /* Rød farve */
+    color: var(--sekundaereFarve); /* Hvid tekst */
+    border: none;
+    border-radius: 20px; /* Rundede hjørner */
+    font-size: 16px; /* Juster skrifttypens størrelse */
 }
 
 /* foooter */
