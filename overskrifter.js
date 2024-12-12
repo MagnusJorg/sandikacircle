@@ -6,7 +6,7 @@
 
 // function rykOverskrift(){ //Tilføjer en funktion der starter når jeg scroller
 //     scrollPosition = Math.round(window.scrollY);
-//     console.log(scrollPosition);
+//     // console.log(scrollPosition);
 //     ordEt.style.left = scrollPosition + "px"; //Værdien kan ændres, eks. style.rights
 //     ordTo.style.right = scrollPosition + "px";
 //     //julle.style.bottom = scrollPosition + "px"; //Værdien kan ændres, eks. style.bottom 
