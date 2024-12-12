@@ -45,7 +45,8 @@ h2{
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
-.top{
+/* Top-sektion styling */
+.top {
     display: flex;
     justify-content: space-between;
     padding-left: 25px;
@@ -53,7 +54,8 @@ h2{
     padding-top: 40px;
 }
 
-.top img{
+/* Styling af billeder i top-sektionen */
+.top img {
     max-width: 40px;
     max-height: 35px;
 }
@@ -67,93 +69,71 @@ h2{
     height: 100%;
     background-color: #0B132B;
     color: #FCF9F2;
-    transition: right 0.5s ease-in-out;
+    transition: right 0.5s ease-in-out; /* Glidende animation */
     z-index: 1000;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border-radius: 30px 0 0 30px; /* runde hjorner*/
+    border-radius: 30px 0 0 30px; /* Runde hjørner */
 }
 
+/* Menuens ul styling */
 .menu ul {
     list-style: none;
     padding: 0;
     text-align: end;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* spreeder links */
-    height: 80%; /* hojden på selve tekst boxen */
+    justify-content: space-between; /* Spred linksene jævnt */
+    height: 80%; /* Højden på tekstområdet */
     margin-top: 0px;
-
 }
 
-/* plads mellem x og tekst */
+/* Afstand mellem links */
 .menu ul li {
     margin: 20px 0;
 }
 
-/* dekoration af tekst*/
+/* Styling af links i menuen */
 .menu ul li a {
     text-decoration: none;
-    color: #FCF9F2;
-    font-family: 'Kaftan';
-    font-size: 30px;
+    color: #FCF9F2; /* Tekstfarve */
+    font-family: 'Kaftan'; /* Skrifttype */
+    font-size: 30px; /* Skriftstørrelse */
+    text-transform: uppercase; /* Alle bogstaver med stort */
 }
 
-/* Luk-knap */
+/* Luk-knap styling */
 .menuluk {
     align-self: flex-end;
     font-size: 24px;
     cursor: pointer;
 }
 
-/* Aktiv menu */
+/* Når menuen er aktiv */
 .menu.active {
-    right: 0; /* Glid ind på skærmen */
+    right: 0; /* Menu glider ind på skærmen */
 }
 
-
-/* Skjul dropdown-menuen */
+/* Dropdown-menu skjul */
 .hidden {
     display: none;
 }
 
-/* Styling for dropdown-menu */
-#holdMenu a {
-    padding-right: 20px; /* Indrykning for at skille den fra hovedmenuen */
-    font-size: 25px; 
-    font-family: 'Montserrat';
-    font-weight: 15;
-    color: var(--primaereFarve);
-
-}
-
-#blivMedlemMenu a {
-    padding-right: 20px; /* Indrykning for at skille den fra hovedmenuen */
-    font-size: 25px; 
-    font-family: 'Montserrat';
-    font-weight: 15;
-    color: var(--primaereFarve);
-
-}
-
-#faciliteterMenu a {
-    padding-right: 20px; /* Indrykning for at skille den fra hovedmenuen */
-    font-size: 25px; 
-    font-family: 'Montserrat';
-    font-weight: 15;
-    color: var(--primaereFarve);
-
-}
-
+/* Dropdown-menu styling */
+#holdMenu a,
+#blivMedlemMenu a,
+#faciliteterMenu a,
 #kontaktMenu a {
-    padding-right: 20px; /* Indrykning for at skille den fra hovedmenuen */
-    font-size: 25px; 
-    font-family: 'Montserrat';
-    font-weight: 15;
-    color: var(--primaereFarve);
-
+    padding-right: 20px; /* Afstand for adskillelse */
+    font-size: 25px;
+    font-family: 'Montserrat'; /* Skrifttype */
+    font-weight: 400; /* Normal vægt */
+    color: var(--primaereFarve); /* Tekstfarve */
 }
+
+
+
 
 .logoforside video {
     width: 100%; /* Sørg for at videoen fylder sektionen */
@@ -171,8 +151,19 @@ h2{
     line-height: 1.5;
 }
 
+.tekst h2{
+    margin: 0%;
+    font-weight: 1000;
+}
+
 .overskrift{
     text-align: center;
+    margin-top: 180px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 60px;
 }
 
 /* foooter */

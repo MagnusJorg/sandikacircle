@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,68 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/gur3pox.css">
 </head>
+
 <body>
+
+
     <header>
+        <!-- Top sektion med navigation -->
         <section class="top">
-            <a href="404.html"><img src="images/logInd.webp" alt="Log Ind"></a>
-            <img id="burgerIkon" src="images/burger.webp" alt="Burger Menu">
+            <!-- Link til log ind side med billede -->
+            <a href="404.html"><img src="images/logInd.webp" alt="LOG IND"></a>
+            <!-- Burger menu ikon -->
+            <img id="burgerIkon" src="images/burger.webp" alt="BURGER MENU">
         </section>
+
+        <nav id="menu" class="menu">
+            <!-- Luk-knap til menu -->
+            <div class="menuluk" id="lukMenu">×</div>
+            <ul>
+                <!-- HOLD -->
+                <li>
+                    <a href="#" id="holdButton">HOLD</a>
+                    <ul id="holdMenu" style="display: none;">
+                        <li><a href="tilmeld.html">TILMELD</a></li>
+                        <li><a href="holdOversigt.html">OVERSIGT</a></li>
+                        <li><a href="pakkeliste.html">PAKKELISTE</a></li>
+                    </ul>
+                </li>
+        
+                <!-- BLIV MEDLEM -->
+                <li>
+                    <a href="#" id="blivMedlemButton">BLIV MEDLEM</a>
+                    <ul id="blivMedlemMenu" style="display: none;">
+                        <li><a href="prisOversigt.html">PRISER</a></li>
+                        <li><a href="medlemsBetingelser.html">BETINGELSER</a></li>
+                    </ul>
+                </li>
+        
+                <!-- FACILITETER -->
+                <li>
+                    <a href="#" id="faciliteterButton">FACILITETER</a>
+                    <ul id="faciliteterMenu" style="display: none;">
+                        <li><a href="faciliteter.html">FACILITETER</a></li>
+                        <li><a href="events.html">EVENTS</a></li>
+                    </ul>
+                </li>
+        
+                <!-- OM SANDIKA -->
+                <li><a href="omSandika.html">OM SANDIKA</a></li>
+        
+                <!-- KONTAKT OS -->
+                <li>
+                    <a href="#" id="kontaktButton">KONTAKT OS</a>
+                    <ul id="kontaktMenu" style="display: none;">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="faq.html">KONTAKT</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <nav id="menu" class="menu">
-        <div class="menuluk" id="lukMenu">×</div>
+        <div class="menuluk" id="lukMenu">x</div>
         <ul>
             <!-- Hold -->
             <li>
@@ -28,7 +81,7 @@
                     <li><a href="pakkeliste.html">Pakkeliste</a></li>
                 </ul>
             </li>
-    
+
             <!-- Bliv Medlem -->
             <li>
                 <a href="#" id="blivMedlemButton">Bliv Medlem</a>
@@ -37,7 +90,7 @@
                     <li><a href="medlemsBetingelser.html">Betingelser</a></li>
                 </ul>
             </li>
-    
+
             <!-- Faciliteter -->
             <li>
                 <a href="#" id="faciliteterButton">Faciliteter</a>
@@ -46,10 +99,10 @@
                     <li><a href="events.html">Events</a></li>
                 </ul>
             </li>
-    
+
             <!-- Om Sandika -->
             <li><a href="omSandika.html">Om Sandika</a></li>
-    
+
             <!-- Kontakt Os -->
             <li>
                 <a href="#" id="kontaktButton">Kontakt Os</a>
@@ -67,34 +120,41 @@
             Din browser understøtter ikke video.
         </video>
     </section>
-    
-
-<section class="tekst">
-    <article class="overskrift"><h1>Hvad er <br> yogalates?</h1></article>
-    <p>Yogalates er en blid, men effektiv kombination af yogaens ro, pilates’ styrke og mediationens fokus på nærvær og balance. Det er en træningsform, der forbinder krop og sjæl, så du både bliver stærkere udenpå, men også indeni.</p>
-</section>
-
-<section class="tekst">
-     <h2>Er det begynder venligt?</h2>
-    <p>Yogalates er en blid, men effektiv kombination af yogaens ro, pilates’ styrke og mediationens fokus på nærvær og balance. Det er en træningsform, der forbinder krop og sjæl, så du både bliver stærkere udenpå, men også indeni.</p>
-</section>
 
 
-<footer class="footer">
-    <section class="footerlogo">
-        <a href="index.html">
-            <img class="logofooter" src="images/logoFooter.webp" alt="">
-        </a>
+    <section class="tekst">
+        <article class="overskrift">
+            <h1>Hvad er <br> yogalates?</h1>
+        </article>
+        <p>Yogalates er en blid, men effektiv kombination af yogaens ro, pilates’ styrke og mediationens fokus på nærvær
+            og balance. Det er en træningsform, der forbinder krop og sjæl, så du både bliver stærkere udenpå, men også
+            indeni.</p>
     </section>
-    <section class="info">
-        <p>Tlf: +45 10 90 23 40</p>
-        <p>Åbningstider: Man-Søn 05-20</p>
-        <P>Adresse: Lauravej 12, 8000 Aarhus C </p>
+
+    <section class="tekst">
+        <h2>Er det begynder venligt?</h2>
+        <p>Alle hold samt events vi tilbyder er tilrettelagt, så alle niveauer kan være med - også nybegyndere. Hos
+            Sandika circle handler det om at give kroppen plads, så du får rum og mulighed for at være dig selv helt
+            uden krav eller pres. </p>
+    </section>
+
+
+    <footer class="footer">
+        <section class="footerlogo">
+            <a href="index.html">
+                <img class="logofooter" src="images/logoFooter.webp" alt="">
+            </a>
+        </section>
+        <section class="info">
+            <p>Tlf: +45 10 90 23 40</p>
+            <p>Åbningstider: Man-Søn 05-20</p>
+            <P>Adresse: Lauravej 12, 8000 Aarhus C </p>
             <article class="some">
                 <img src="images/insta.webp" alt="">
                 <img src="images/facebook.webp" alt="">
             </article>
-    </section>
-</footer>
+        </section>
+    </footer>
 </body>
+
 </html>
