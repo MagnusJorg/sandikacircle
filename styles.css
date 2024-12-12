@@ -171,8 +171,19 @@ h2{
     line-height: 1.5;
 }
 
+.tekst h2{
+    margin: 0%;
+    font-weight: 1000;
+}
+
 .overskrift{
     text-align: center;
+    margin-top: 180px;
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 60px;
 }
 
 /* foooter */
