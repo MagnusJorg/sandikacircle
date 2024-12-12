@@ -1,165 +1,175 @@
 <!DOCTYPE html>
 <html lang="da">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title> <!-- Sidens title -->
-    <script src="js.js" defer></script>
+    <title>Hold oversigt</title> <!-- Giver siden et navn -->
+    <script src="js.js" defer></script> <!-- Linker til de forskellige javascripts -->
     <script src="overskrifter.js" defer></script>
-    <link rel="stylesheet" href="holdOversigt.css"> <!-- CSS connect -->
-    <link rel="stylesheet" href="https://use.typekit.net/gur3pox.css"> <!-- Import af sigurd font -->
+    <link rel="stylesheet" href="holdOversigt.css"> <!-- Linker til den tilsvarende CSS -->
+    <link rel="stylesheet" href="https://use.typekit.net/gur3pox.css"> <!-- Importer af sigurd fonten -->
 </head>
+
 <body>
 
-<!-- NAVIGATION BAREN -->
-<header>
-    <section class="top">
-        <a href="404.html"><img src="images/logInd.webp" alt="Log Ind"></a>
-        <img id="burgerIkon" src="images/burger.webp" alt="Burger Menu">
+    <!-- NAVIGATION BAREN -->
+    <header>
+        <section class="top">
+            <a href="404.html"><img src="images/logInd.webp" alt="Log Ind"></a>
+            <img id="burgerIkon" src="images/burger.webp"
+                alt="Burger Menu til Sandika Circle - yoga, pilates og meditationstudie i Aarhus">
+        </section>
+    </header>
+
+
+    <!-- BURGER MENUEN -->
+
+    <nav id="menu" class="menu"> <!--HVORFOR BÅDE ID OG CLASS?????-->
+        <div class="menuluk" id="lukMenu">×</div>
+        <ul>
+            <!-- Hold -->
+            <li>
+                <a href="#" id="holdButton">HOLD</a>
+                <ul id="holdMenu" style="display: none;">
+                    <li><a href="tilmeld.html">Tilmelding</a></li>
+                    <li><a href="holdOversigt.html">Oversigt</a></li>
+                    <li><a href="pakkeliste.html">Pakkeliste</a></li>
+                </ul>
+            </li>
+
+            <!-- Bliv Medlem -->
+            <li>
+                <a href="#" id="blivMedlemButton">BLIV MEDLEM</a>
+                <ul id="blivMedlemMenu" style="display: none;">
+                    <li><a href="prisOversigt.html">Priser</a></li>
+                    <li><a href="medlemsBetingelser.html">Betingelser</a></li>
+                </ul>
+            </li>
+
+            <!-- Faciliteter -->
+            <li>
+                <a href="#" id="faciliteterButton">FACILITETER</a>
+                <ul id="faciliteterMenu" style="display: none;">
+                    <li><a href="faciliteter.html">Faciliteter</a></li>
+                    <li><a href="events.html">Events</a></li>
+                </ul>
+            </li>
+
+            <!-- Om Sandika -->
+            <li><a href="omSandika.html">OM SANDIKA</a></li>
+
+            <!-- Kontakt Os -->
+            <li>
+                <a href="#" id="kontaktButton">KONTAKT OS</a>
+                <ul id="kontaktMenu" style="display: none;">
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="faq.html">Kontakt</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <!--    HOLDOVERSIGT - DELEN    -->
+    <section class="overskrift"> <!-- Giver dem en class, så de lettere kan styles sammen efterfølgende-->
+        <h1 id="ordEt">Hold</h1> <!-- Deler overskriften op i to, da de hver især skal have en javascript effekt-->
+        <h1 id="ordTo">oversigt</h1>
     </section>
-</header>
 
-
-<!-- BURGER MENUEN -->
-
-<nav id="menu" class="menu">
-    <div class="menuluk" id="lukMenu">×</div>
-    <ul>
-        <!-- Hold -->
-        <li>
-            <a href="#" id="holdButton">Hold</a>
-            <ul id="holdMenu" style="display: none;">
-                <li><a href="tilmeld.html">Tilmelding</a></li>
-                <li><a href="holdOversigt.html">Oversigt</a></li>
-                <li><a href="pakkeliste.html">Pakkeliste</a></li>
-            </ul>
-        </li>
-
-        <!-- Bliv Medlem -->
-        <li>
-            <a href="#" id="blivMedlemButton">Bliv Medlem</a>
-            <ul id="blivMedlemMenu" style="display: none;">
-                <li><a href="prisOversigt.html">Priser</a></li>
-                <li><a href="medlemsBetingelser.html">Betingelser</a></li>
-            </ul>
-        </li>
-
-        <!-- Faciliteter -->
-        <li>
-            <a href="#" id="faciliteterButton">Faciliteter</a>
-            <ul id="faciliteterMenu" style="display: none;">
-                <li><a href="faciliteter.html">Faciliteter</a></li>
-                <li><a href="events.html">Events</a></li>
-            </ul>
-        </li>
-
-        <!-- Om Sandika -->
-        <li><a href="omSandika.html">Om Sandika</a></li>
-
-        <!-- Kontakt Os -->
-        <li>
-            <a href="#" id="kontaktButton">Kontakt Os</a>
-            <ul id="kontaktMenu" style="display: none;">
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="faq.html">Kontakt</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-
-<!-- MIDTERSTE DEL -->
-
-<section class="overskrift">
-    <h1 id="ordEt">Hold</h1>
-    <h1 id="ordTo">oversigt</h1>
-</section>
-
-
-</section>
+    <!-- Første hold -->
     <section class="holdene">
         <article class="holdbillede">
-            <img src="images/holdOversigt1.webp" alt="Kvinde der laver Yoga" width="300"> 
+            <img src="images/holdOversigt1.webp" alt="Kvinde der laver Yoga" width="300">
         </article>
-    <section>
-        <h2>Hot yoga</h2>
-        <p class="varighed">Varighed: 1 time</p> <!--Giver varighed en klasse, da disse skal styles anderledes end andre paragraphs-->
+        <section>
+            <h2>Hot yoga</h2>
+            <p><strong> Varighed: 1 time</strong></p>
+            <!--Giver varighed en klasse, da disse skal styles anderledes end andre paragraphs-->
+        </section>
+
+        <section>
+            <p>Hot yoga foregår i et varmt rum, der hjælper med at løsne spændinger, øge smidigheden og bringe ro til
+                både krop og sind.</p>
+        </section>
+
+        <section>
+            <a href="hotYoga.html" class="LaesMere">Læs mere ...</a>
+            <a href="hotYoga.html"><button>TILMELD</button></a>
+        </section>
+
     </section>
 
-    <section>
-        <p>Hot yoga foregår i et varmt rum, der hjælper med at løsne spændinger, øge smidigheden og bringe ro til både krop og sind.</p>
+    <!-- Andet hold -->
+    <section class="holdene"> <!-- Sætter hele holdet i en sektion, da de skal i display flex -->
+        <article class="holdbillede">
+            <img src="images/holdOversigt2.webp" alt="Kvinder der holder i hånd, så det former en cirkel" width="300">
+        </article>
+        <section>
+            <h2>Meditation</h2>
+            <p><strong>Varighed: 1 time</strong></p>
+        </section>
+
+        <section>
+            <p>Hot yoga foregår i et varmt rum, der hjælper med at løsne spændinger, øge smidigheden og bringe ro til
+                både krop og sind.</p>
+        </section>
+
+        <section>
+            <a href="hotYoga.html" class="LaesMere">Læs mere ...</a>
+            <button>TILMELD</button>
+        </section>
+
     </section>
 
-    <section>
-        <a href="hotYoga.html" class="LaesMere">Læs mere ...</a>
-        <a href="hotYoga.html"><button>TILMELD</button></a>
+    <!-- Tredje hold -->
+    <section class="holdene">
+        <article class="holdbillede">
+            <img src="images/holdOversigt3.webp" alt="Close up billede af en kvinde der dyrker yoga" width="300">
+        </article>
+        <section>
+            <h2>Yogalates</h2>
+            <p><strong>Varighed: 1 time</strong></p>
+        </section>
+
+        <section>
+            <p>Hot yoga foregår i et varmt rum, der hjælper med at løsne spændinger, øge smidigheden og bringe ro til
+                både krop og sind.</p>
+        </section>
+
+        <section>
+            <a href="hotYoga.html" class="LaesMere">Læs mere ...</a>
+            <button>TILMELD</button>
+        </section>
+
     </section>
 
-</section>
-
-<section class="holdene">
-<article class="holdbillede">
-<img src="images/holdOversigt2.webp" alt="Kvinder der holder i hånd, så det former en cirkel" width="300"> 
-</article>
-<section>
-    <h2>Meditation</h2>
-    <p class="varighed">Varighed: 1 time</p>
-</section>
-
-<section>
-    <p>Hot yoga foregår i et varmt rum, der hjælper med at løsne spændinger, øge smidigheden og bringe ro til både krop og sind.</p>
-</section>
-
-<section>
-    <a href="hotYoga.html" class="LaesMere" >Læs mere ...</a>
-    <button>TILMELD</button>
-</section>
-
-</section>
 
 
-<section class="holdene">
-<article class="holdbillede">
-<img src="images/holdOversigt3.webp" alt="Close up billede af en kvinde der dyrker yoga" width="300"> 
-</article>
-<section>
-    <h2>Yogalates</h2>
-    <p class="varighed">Varighed: 1 time</p>
-</section>
-
-<section>
-    <p>Hot yoga foregår i et varmt rum, der hjælper med at løsne spændinger, øge smidigheden og bringe ro til både krop og sind.</p>
-</section>
-
-<section>
-    <a href="hotYoga.html" class="LaesMere" >Læs mere ...</a>
-    <button>TILMELD</button>
-</section>
-
-</section>
-
-
-
-<!--Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <section class="footerlogo">
-        <!--- Logo med link til index.html -->
+            <!-- Logo med link til index.html (forsiden) -->
             <a href="index.html">
-                <img class="logofooter" src="images/logoFooter.webp" alt="">
+                <img class="logofooter" src="images/logoFooter.webp"
+                    alt="Logo til Sandika Circle - yoga, pilates og meditationsstudie">
             </a>
         </section>
-        <!--- Informationer -->
-        <section class="info">
+        <!-- Informationer -->
+        <section class="info"> <!-- Indeler dette i en sektion, da det skal styles ens (placeres i højre side)-->
             <p>Tlf: +45 10 90 23 40</p>
             <p>Åbningstider: Man-Søn 05-20</p>
-            <P>Adresse: Lauravej 12, 8000 Aarhus C </p>
+            <p>Adresse: Lauravej 12, 8000 Aarhus C </p>
 
-            <!--- Ikoner til SoMe -->
-                <article class="some">
-                    <img src="images/insta.webp" alt="">
-                    <img src="images/facebook.webp" alt="">
-                </article>
+            <!-- Ikoner til SoMe -->
+            <article class="some">
+                <img src="images/insta.webp" alt="Instagram ikon, som fører til Sandika Circles instagram profil">
+                <img src="images/facebook.webp" alt="Facebook ikon, som fører til Sandika Circles facebook profil">
+            </article>
         </section>
     </footer>
 
 </body>
+
 </html>
