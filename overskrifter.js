@@ -3,7 +3,6 @@ const ordEt = document.querySelector("h1"); //Henter elementer fra HTML og giver
 const ordTo = document.getElementById("ordTo"); //Henter elementer fra HTML og giver dem en bestemt const
 let scrollPosition; // Denne variabel gemmer den aktuelle position, man er scrollet ned til
 
-
 function rykOverskrift(){ //Tilføjer en funktion der starter når jeg scroller
     scrollPosition = Math.round(window.scrollY);
     // console.log(scrollPosition);

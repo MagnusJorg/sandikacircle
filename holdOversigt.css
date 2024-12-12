@@ -22,6 +22,7 @@ body{
     background-color: var(--primaereFarve);
     margin: 0; /*fjerner alt margin, som basis*/
     padding: 0; /*fjerner alt padding, som basis*/
+    width: 100vw;
 }
 
 /* Fonts og med korrekt vogt hojde og farve */
@@ -55,6 +56,10 @@ h2{
 /* viewport */
 @media screen and (min-width: 200px) and (max-width: 480px) {
 
+    html, body {
+        overflow-x: hidden; /* Forhindrer horisontal scroll */
+    }
+    
 /*Navigation burger og ikon mand */
     .top{
         display: flex;
@@ -172,16 +177,20 @@ h2{
 
 /*   ------- MIDTERSTE INDHOLD ----- */
 
-/* Gør kanterne på billederne runde*/
 
-/* #ordEt{
-margin-left: 40px;
+
+#ordEt{
+margin-left: 70px;
+position: relative; /* Sørger for, at det holder sig inden for parent-elementet */
+right: 0; /* Fjerner overskud til højre */
 }
 
 #ordTo{
-margin-left: 50px;
-} */
+margin-left: 100px;
+}
 
+
+/* Gør kanterne på billederne runde*/
 
 img{
     border-radius: 10%;
