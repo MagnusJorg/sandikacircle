@@ -77,6 +77,11 @@ h4{
 
 /* viewport */
 @media screen and (min-width: 200px) and (max-width: 480px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Forhindrer horisontal overflow */
+    }
 
 /* overskrift */
 .overskrift{
@@ -117,27 +122,34 @@ h4{
 }
 
 
-/* figure der bevæger sig i BMO sektion */
-.paralaxBmo1,
-.paralaxBmo2 {
-    position: absolute;
-    z-index: 1000;
+.paralaxfigure, .paralaxbillede1, .paralaxfigur2, .paralaxbillede2 {
+    position: relative;
 }
+
+.paralaxFigure1, .paralaxFigure2, .paralaxBmo1, .paralaxBmo2 {
+    position: absolute;
+    width: 700px;
+}
+
 
 .paralaxBmo1 {
-    top: 860px; /* Startposition */
-    left: -45%; /* Placering udenfor venstre kant */
-    width: 700px; /* Justér størrelse */
+    left: -70%;
+    top: -15px;
+    z-index: 100;
 }
 
 .paralaxBmo2 {
-    top: 1080px; /* Startposition */
-    right: -40%; /* Placering udenfor højre kant */
-    width: 700px; /* Justér størrelse */
+    right: -80%;
+    top: 180px;
+    z-index: 100;
 }
 
-.paralaxBmo2 img {   
-    width: 700px; /* Justér størrelse */
+.paralaxBmo1 img{
+width: 700px;
+}
+
+.paralaxBmo2 img{
+    width: 700px;
 }
 
 /* figure der bevæger sig */
@@ -150,13 +162,13 @@ h4{
 }
 
 .paralaxFigure1 {
-    top: 200px; /* Startposition */
+    top: -10px; /* Startposition */
     left: -20%; /* Placering udenfor venstre kant */
     width: 500px;
 }
 
 .paralaxFigure2 {
-    top: 390px; /* Startposition */
+    top: 190px; /* Startposition */
     right: -20%; /* Placering udenfor højre kant */
     width: 500px;
 }
@@ -171,6 +183,7 @@ h4{
     display: flex;
     flex-direction: column;
     margin-left: 15%;
+    margin-right: 10%;
 }
 
 .udendorevent p {
@@ -229,7 +242,7 @@ h4{
     background-color: #0B132B;
     color: #FCF9F2;
     transition: right 0.5s ease-in-out; /* hastighed på menu slider */
-    z-index: 1000;
+    z-index: 2000;
     display: flex;
     flex-direction: column;
     padding: 20px;
