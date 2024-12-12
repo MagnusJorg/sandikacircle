@@ -192,6 +192,12 @@ img{
     flex-direction: column;
     justify-content: center;
     margin: 10%;
+    margin-top: 0%;
+}
+
+.holdbillede1{
+    display: flex;
+    justify-content: center;
 }
 
 p{
