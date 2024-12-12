@@ -177,6 +177,7 @@ html, body {
 
 .filterikonet{
     display: flex;
+    gap: 10px;
 }
 
 .skjult {
