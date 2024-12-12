@@ -198,6 +198,10 @@ p{
     margin-top: 0;
 }
 
+.holdimg{
+    display: flex;
+}
+
 button{
     background-color: #0B132B;
     color: #FCF9F2;
