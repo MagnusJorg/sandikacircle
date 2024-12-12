@@ -21,6 +21,7 @@ body{
     background-color: var(--primaereFarve);
     margin: 0; /*fjerner alt margin, som basis*/
     padding: 0; /*fjerner alt padding, som basis*/
+    width: 100vw; /*Sætter bredden til at være 100% af hele bredden af vinduet (viewport) */
 }
 
 /* Fonts og med korrekt vogt hojde og farve */
@@ -39,6 +40,7 @@ h1{
     font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
     margin: 30px 0 0 0;
+    position: relative; /*Sætter den til position relative, da den skal ændres på vha. javascript */
 }
 
 h2{
@@ -163,6 +165,23 @@ h2{
 }
 
 /* Main */
+html,
+body {
+    overflow-x: hidden; /* Forhindrer horisontal scroll */
+}
+
+/*Placering og styling af overskrifterne*/
+#ordEt{
+position: relative; /* Sørger for, at det holder sig inden for parent-elementet */
+right: 0; /* Fjerner overskud til højre */
+margin: 25px 0px -40px 45px;
+}
+
+#ordTo{
+margin-left: 50px;
+}
+
+
 
 /* container */
 .medlemsBetingelser {
@@ -177,13 +196,7 @@ h2{
 
 /* Hovedoverskrifter */
 
-.overskrift{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0px;
-}
+
 
 /* Sektionstitler */
 .medlemsBetingelser h2 {
