@@ -76,6 +76,7 @@ h2{
 
 .overskrift{
     margin-bottom: 0px;
+    margin-top: 40px;
 }
 
 
@@ -180,7 +181,7 @@ h2{
 
 
 #ordEt{
-margin-left: 70px;
+margin-left: 50px;
 position: relative; /* Sørger for, at det holder sig inden for parent-elementet */
 right: 0; /* Fjerner overskud til højre */
 }
