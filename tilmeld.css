@@ -9,8 +9,6 @@
     font-style: normal;
 }
 
-
-
 /* 4 grundfarver */
 :root {
     --primaereFarve: #FCF9F2;
@@ -55,8 +53,8 @@ h2{
 
 h3{
     margin-bottom: 20px;
-    margin-top: 10px;
-    font-size: 20px;
+    margin-top: 2px;
+    font-size: 18px;
     font-family: 'Montserrat'; /* font*/
     color: var(--sekundaereFarve);/* Farve på skriften*/
     font-weight: 300;
@@ -65,7 +63,7 @@ h3{
 h4{
     margin-bottom: 20px;
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'Montserrat'; /* font*/
     color: var(--sekundaereFarve);/* Farve på skriften*/
     font-weight: 500;
@@ -84,19 +82,23 @@ h4{
     margin-bottom: 20px;
 }
 
+.filter h2{
+    font-size: 20px;
+}
+
 /* hold box */
 
 .hold{
     margin-top: 50px;
 }
 
-.hotyoga {
+.holdbeskrivelse {
     display: flex;
     flex-direction: column;
     margin-left: 15%;
 }
 
-.hotyoga p {
+.holdbeskrivelse p {
     margin: 0;
 }
 
@@ -107,12 +109,12 @@ h4{
     align-items: flex-start; /* g
     r teksten og ikonet er på samme linje */
     margin-bottom: 50px;
-    gap: 15px;
+    gap: 10px;
     padding-top: 20px;
 }
 
 .filter img{
-    max-width: 30px;
+    max-width: 25px;
     max-height: 50px;
 }
 
