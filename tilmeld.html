@@ -71,67 +71,196 @@
     <h1 id="ordTo"> Hold</h1>
 </section>
 
-<!-- Filter ikon-->
+
 <section class="filter"> 
-    <img id="filterikon" src="images/filterIkon.webp" alt=""> 
-    <h2> FILTER</h2>
+    <!-- Filterikon -->
+
+        <!-- onclick starter javascript funktionen -->
+    <article class="filterikonet" onclick="skiftFilterSynlighed()">
+        <img id="filterikon" src="images/filterIkon.webp" alt="Filter ikon"> 
+        <h2>FILTER</h2>
+    </article>
+
+        <!-- artiklen indeholder elementerne der bliver synlige efter skiftFilterSynlighed starter-->
+    <article id="filterMuligheder" class="filterknapbox">
+
+            <!-- Select bruges til at lave en menu hvor man kan vælge dato -->
+        <select id="filterDato" class="tilfojknap">
+            
+            <!-- option er en mulighed som user kan vælge -->
+            <option value="">Dato</option>
+            <option value="24/12">24/12</option>     
+            <!-- Value er den værdi der sendes når den mulighed er valgt fx: hvis user vælger 24/12 sendes den. -->
+            <option value="25/12">25/12</option>
+            <option value="26/12">26/12</option>
+        </select>
+
+        <select id="filterHoldtype" class="tilfojknap">
+            <option value="">Holdtype</option>
+            <option value="yoga">Yoga</option>
+            <option value="yogalates">Yogalates</option>
+            <option value="pilates">Pilates</option>
+        </select>
+    <!-- Når user klikker på knappen start funktionen. -->
+        <button onclick="anvendHoldFilter()">
+            Anvend Filter
+        </button>
+    </article>
+
 </section>
 
-<Section class="hold">
-    <Article class="holdbeskrivelse">
-        <h2>Hot yoga</h2>
-        <h3>Varighed: 1 time</h3>
-        <p>Dato: 23/12</p>
-        <p>Klokken 5:00</p>
-        <h4>Antal tilmeldte 17/20</h4>
-    </Article>
-    <article class="tilmeldbox">
-        <button class="tilmeld-knap">TILMELD</button>
-    </article>
-    <article class="bolgelinjen"> <img src="images/bolgeLinjen.webp" alt=""></article>
-</Section>
 
-<Section class="hold">
-    <Article class="holdbeskrivelse">
-        <h2>Yogaletes</h2>
+<!-- Hold 24/12 -->
+     <!-- data-dato attribtutten definer datoen -->
+     <!-- data-holdtype er attribtutten der definer holdtypen -->
+<section class="hold" data-dato="24/12" data-holdtype="yoga"> 
+    <article class="holdbeskrivelse">
+        <!-- Den visuelle tekst som vises på hold kortet -->
+        <h2>Yoga</h2>
         <h3>Varighed: 1 time</h3>
-        <p>Dato: 23/12</p>
+        <p>Dato: 24/12</p>
         <p>Klokken 10:00</p>
         <h4>Antal tilmeldte 15/20</h4>
-    </Article>
+    </article>
+         <!-- tilmeldknappen-->
     <article class="tilmeldbox">
         <button class="tilmeld-knap">TILMELD</button>
     </article>
-    <article class="bolgelinjen"> <img src="images/bolgeLinjen.webp" alt=""></article>
-</Section>
+         <!-- bølgelinjen som opdeler sektionerne-->
+    <article class="bolgelinjen">
+        <img src="images/bolgeLinjen.webp" alt="">
+    </article>
+</section>
 
-<Section class="hold">
-    <Article class="holdbeskrivelse">
-        <h2>Meditation</h2>
+<section class="hold" data-dato="24/12" data-holdtype="pilates">
+    <article class="holdbeskrivelse">
+        <h2>Pilates</h2>
         <h3>Varighed: 1 time</h3>
-        <p>Dato: 23/12</p>
-        <p>Klokken 17:00</p>
-        <h4>Antal tilmeldte 19/20</h4>
-    </Article>
+        <p>Dato: 24/12</p>
+        <p>Klokken 16:00</p>
+        <h4>Antal tilmeldte 18/20</h4>
+    </article>
     <article class="tilmeldbox">
         <button class="tilmeld-knap">TILMELD</button>
     </article>
-    <article class="bolgelinjen"> <img src="images/bolgeLinjen.webp" alt=""></article>
-</Section>
+    <article class="bolgelinjen">
+        <img src="images/bolgeLinjen.webp" alt="">
+    </article>
+</section>
 
-<Section class="hold">
-    <Article class="holdbeskrivelse">
-        <h2>Hot yoga</h2>
+<section class="hold" data-dato="24/12" data-holdtype="yogalates">
+    <article class="holdbeskrivelse">
+        <h2>Yogalates</h2>
         <h3>Varighed: 1 time</h3>
-        <p>Dato: 23/12</p>
+        <p>Dato: 24/12</p>
         <p>Klokken 20:00</p>
-        <h4>Antal tilmeldte 20/20</h4>
-    </Article>
+        <h4>Antal tilmeldte 14/20</h4>
+    </article>
     <article class="tilmeldbox">
         <button class="tilmeld-knap">TILMELD</button>
     </article>
-    <article class="bolgelinjen"> <img src="images/bolgeLinjen.webp" alt=""></article>
-</Section>
+    <article class="bolgelinjen">
+        <img src="images/bolgeLinjen.webp" alt="">
+    </article>
+</section>
+
+<!-- Hold 25/12 -->
+<section class="hold" data-dato="25/12" data-holdtype="yogalates">
+    <article class="holdbeskrivelse">
+        <h2>Yogalates</h2>
+        <h3>Varighed: 1 time</h3>
+        <p>Dato: 25/12</p>
+        <p>Klokken 12:00</p>
+        <h4>Antal tilmeldte 10/20</h4>
+    </article>
+    <article class="tilmeldbox">
+        <button class="tilmeld-knap">TILMELD</button>
+    </article>
+    <article class="bolgelinjen">
+        <img src="images/bolgeLinjen.webp" alt="">
+    </article>
+</section>
+
+<section class="hold" data-dato="25/12" data-holdtype="pilates">
+    <article class="holdbeskrivelse">
+        <h2>Pilates</h2>
+        <h3>Varighed: 1 time</h3>
+        <p>Dato: 25/12</p>
+        <p>Klokken 18:00</p>
+        <h4>Antal tilmeldte 12/20</h4>
+    </article>
+    <article class="tilmeldbox">
+        <button class="tilmeld-knap">TILMELD</button>
+    </article>
+    <article class="bolgelinjen">
+        <img src="images/bolgeLinjen.webp" alt="">
+    </article>
+</section>
+
+<section class="hold" data-dato="25/12" data-holdtype="yoga">
+    <article class="holdbeskrivelse">
+        <h2>Yogalates</h2>
+        <h3>Varighed: 1 time</h3>
+        <p>Dato: 25/12</p>
+        <p>Klokken 20:00</p>
+        <h4>Antal tilmeldte 16/20</h4>
+    </article>
+    <article class="tilmeldbox">
+        <button class="tilmeld-knap">TILMELD</button>
+    </article>
+    <article class="bolgelinjen">
+        <img src="images/bolgeLinjen.webp" alt="">
+    </article>
+</section>
+
+<!-- Hold 26/12 -->
+<section class="hold" data-dato="26/12" data-holdtype="pilates">
+    <article class="holdbeskrivelse">
+        <h2>Pilates</h2>
+        <h3>Varighed: 1 time</h3>
+        <p>Dato: 26/12</p>
+        <p>Klokken 14:00</p>
+        <h4>Antal tilmeldte 8/20</h4>
+    </article>
+    <article class="tilmeldbox">
+        <button class="tilmeld-knap">TILMELD</button>
+    </article>
+    <article class="bolgelinjen">
+        <img src="images/bolgeLinjen.webp" alt="">
+    </article>
+</section>
+
+<section class="hold" data-dato="26/12" data-holdtype="yoga">
+    <article class="holdbeskrivelse">
+        <h2>Yoga</h2>
+        <h3>Varighed: 1 time</h3>
+        <p>Dato: 26/12</p>
+        <p>Klokken 18:00</p>
+        <h4>Antal tilmeldte 20/20</h4>
+    </article>
+    <article class="tilmeldbox">
+        <button class="tilmeld-knap">TILMELD</button>
+    </article>
+    <article class="bolgelinjen">
+        <img src="images/bolgeLinjen.webp" alt="">
+    </article>
+</section>
+
+<section class="hold" data-dato="26/12" data-holdtype="yogalates">
+    <article class="holdbeskrivelse">
+        <h2>Yogalates</h2>
+        <h3>Varighed: 1 time</h3>
+        <p>Dato: 26/12</p>
+        <p>Klokken 20:00</p>
+        <h4>Antal tilmeldte 12/20</h4>
+    </article>
+    <article class="tilmeldbox">
+        <button class="tilmeld-knap">TILMELD</button>
+    </article>
+    <article class="bolgelinjen">
+        <img src="images/bolgeLinjen.webp" alt="">
+    </article>
+</section>
 
 <!--Footer -->
     <footer class="footer">

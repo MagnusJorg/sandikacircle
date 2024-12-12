@@ -74,9 +74,9 @@ h4{
 /* viewport */
 @media screen and (min-width: 200px) and (max-width: 480px) {
 
-    html, body {
+html, body {
         overflow-x: hidden; /* Forhindrer horisontal scroll */
-    }
+ }
 
 /* overskrift */
 .overskrift{
@@ -84,9 +84,6 @@ h4{
     margin-bottom: 20px;
 }
 
-.filter h2{
-    font-size: 20px;
-}
 
 /* hold box */
 
@@ -102,6 +99,49 @@ h4{
 
 .holdbeskrivelse p {
     margin: 0;
+}
+
+
+/* filter knap */
+.filterknapbox select {
+    padding: 6px 12px; /* Lignende padding som tilmeld-knap */
+    font-size: 14px; /* Tekststørrelse */
+    border: 1px solid var(--blofarve); /* Ramme med primær farve */
+    border-radius: 30px; /* Runde hjørner */
+    background-color: var(--primaereFarve); /* Baggrundsfarve */
+    color: var(--sekundaereFarve); /* Tekstfarve */
+    cursor: pointer; /* Pointer ved hover */
+    outline: none; /* Fjerner default outline */
+    font-family: 'Montserrat', sans-serif; /* Samme font som tilmeld-knap */
+}
+
+/* Styling for filterknappen */
+.filterknapbox  button {
+    padding: 6px 20px; /* Lignende padding som tilmeld-knap */
+    font-size: 14px; /* Tekststørrelse */
+    border: 1px solid var(--blofarve); /* Ramme med primær farve */
+    border-radius: 30px; /* Runde hjørner */
+    background-color: var(--blofarve); /* Baggrundsfarve som tilmeld-knap */
+    color: var(--primaereFarve); /* Tekstfarve */
+    cursor: pointer; /* Pointer ved hover */
+    font-family: 'Montserrat', sans-serif; /* Samme font som tilmeld-knap */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.filterknapbox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styling for filterikonet */
+#filterikon {
+    cursor: pointer;
+    width: 30px;
+}
+
+.filter h2{
+    font-size: 25px;
 }
 
 
@@ -123,17 +163,26 @@ h4{
 .filter {
     margin-left: 15%;
     display: flex; /* gør elementerne vandret */
-    align-items: flex-start; /* g
-    r teksten og ikonet er på samme linje */
+    align-items: flex-start; /* gor teksten og ikonet er på samme linje */
     margin-bottom: 50px;
     gap: 10px;
     padding-top: 20px;
+    flex-direction: column;
 }
 
 .filter img{
     max-width: 25px;
-    max-height: 50px;
+    max-height: 20px;
 }
+
+.filterikonet{
+    display: flex;
+}
+
+.skjult {
+    display: none;
+}
+
 
 /*tilmeld knap */
 
@@ -167,8 +216,10 @@ h4{
 }
 
 .bolgelinjen img{
-    max-width: 70%;
+    max-width: 70%; /* bredden på linjen */
 }
+
+
 
 /*Navigation burger og ikon mand */
     .top{
@@ -177,7 +228,8 @@ h4{
         padding-left: 25px;
         padding-right: 25px;
         padding-top: 40px;
-    }
+}
+
 /* navigation ikon størrelse */ 
 .top img{
     max-width: 40px;
@@ -279,7 +331,6 @@ h4{
 
 }
 
-/* foooter */
 
 
 /* foooter */
