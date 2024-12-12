@@ -205,15 +205,20 @@ strong{
 
 
 #sendButton{
-    background-color: #0B132B;
+    background-color: var(--blofarve);
     color: #FCF9F2;
     border-radius: 20px;
     width: 100px;
+    height: 25px;
     margin-top: 20px;
     margin-left: 200px;
+    font-family: 'Montserrat';
+    font-size: 13px ;
+    border: 0px;
+    font-weight: 600;
 }
 
-/* Styling til alert-overlay */
+/* Styling til alert og overlay */
 #alert-overlay {
     position: fixed; /*dækker hele skærmen, selv når du scroller*/
     top: 0;
