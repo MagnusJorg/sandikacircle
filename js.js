@@ -2,16 +2,12 @@
 const burgerIkon = document.getElementById('burgerIkon');
 const menu = document.getElementById('menu');
 const lukMenu = document.getElementById('lukMenu');
-
 const holdButton = document.getElementById('holdButton');
 const holdMenu = document.getElementById('holdMenu');
-
 const blivMedlemButton = document.getElementById('blivMedlemButton');
 const blivMedlemMenu = document.getElementById('blivMedlemMenu');
-
 const faciliteterButton = document.getElementById('faciliteterButton');
 const faciliteterMenu = document.getElementById('faciliteterMenu');
-
 const kontaktButton = document.getElementById('kontaktButton');
 const kontaktMenu = document.getElementById('kontaktMenu');
 
@@ -36,7 +32,6 @@ function toggleMenu(button, menu) {
         }
     });
 }
-
 // funktion til hvert menupunkt
 toggleMenu(holdButton, holdMenu);
 toggleMenu(blivMedlemButton, blivMedlemMenu);

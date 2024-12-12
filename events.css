@@ -83,9 +83,53 @@ h4{
     align-items: center;
     margin-bottom: 20px;
 }
+/* paralax scrolling */
 
-.overskrift img{
+/*billederne bag figur i paralax scroll */
+
+.paralaxbillede1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    position: relative; /* Referencepunkt for absolut positionering */
+    overflow: hidden; /* Sørg for, at figurerne ikke stikker udenfor */
+}
+
+.paralaxbillede2{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.paralaxbillede2 img{
     max-width: 80%;
+    max-height: 500;
+}
+
+.paralaxbillede1 img{
+   width: 300px;
+    max-height: 500px;
+}
+
+/* figure der bevæger sig */
+
+.paralaxFigure1,
+.paralaxFigure2 {
+    position: absolute;
+    z-index: 1000;
+    width: 200px; /* Justér størrelsen */
+}
+
+.paralaxFigure1 {
+    top: 200px; /* Startposition */
+    left: -20%; /* Placering udenfor venstre kant */
+    width: 500px;
+}
+
+.paralaxFigure2 {
+    top: 390px; /* Startposition */
+    right: -20%; /* Placering udenfor højre kant */
+    width: 500px;
 }
 
 /* hold box */
@@ -103,7 +147,6 @@ h4{
 .udendorevent p {
     margin: 0;
 }
-
 
 
 /*tilmeld knap */
