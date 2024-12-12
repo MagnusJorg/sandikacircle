@@ -40,6 +40,7 @@ h1{
     font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
     margin: 0;
+    position: relative; /*Sætter den til position relative, da */
 }
 
 h2{
@@ -69,12 +70,10 @@ h2{
 }
 
 .overskrift{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 0px;
 }
+
+
 
 /* Menu styling */
 .menu {
@@ -174,6 +173,16 @@ h2{
 /*   ------- MIDTERSTE INDHOLD ----- */
 
 /* Gør kanterne på billederne runde*/
+
+/* #ordEt{
+margin-left: 40px;
+}
+
+#ordTo{
+margin-left: 50px;
+} */
+
+
 img{
     border-radius: 10%;
 }
