@@ -84,9 +84,6 @@ html, body {
     margin-bottom: 20px;
 }
 
-.filter h2{
-    font-size: 25px;
-}
 
 /* hold box */
 
@@ -142,6 +139,11 @@ html, body {
     cursor: pointer;
     width: 30px;
 }
+
+.filter h2{
+    font-size: 25px;
+}
+
 
 /* OVERSKRIFTEN */
 
@@ -214,8 +216,10 @@ html, body {
 }
 
 .bolgelinjen img{
-    max-width: 70%;
+    max-width: 70%; /* bredden på linjen */
 }
+
+
 
 /*Navigation burger og ikon mand */
     .top{
@@ -224,7 +228,8 @@ html, body {
         padding-left: 25px;
         padding-right: 25px;
         padding-top: 40px;
-    }
+}
+
 /* navigation ikon størrelse */ 
 .top img{
     max-width: 40px;
