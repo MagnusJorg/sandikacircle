@@ -47,17 +47,21 @@ h2{
 @media screen and (min-width: 200px) and (max-width: 480px) {
 /* Top-sektion styling */
 .top {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 40px;
+    position: fixed; /* Gør sektionen fast på toppen af siden */
+    top: +40px; /* Sætter den helt op i toppen */
+    left: 0; /* Sætter den helt til venstre */
+    width: 90%; /* Fylder hele bredden af skærmen */
+    z-index: 1000; /* Sørger for, at den ligger øverst */
+    display: flex; /* Holder burgerikonet og log ind-ikonet på linje */
+    justify-content: space-between; /* Placerer ikonerne i hver sin ende */
+    padding: 20px 25px; /* Tilføjer lidt luft omkring ikonerne */
+
 }
 
 /* Styling af billeder i top-sektionen */
 .top img {
-    max-width: 40px;
-    max-height: 35px;
+    max-width: 42px;
+    max-height: 36px;
 }
 
 /* Menu styling */
@@ -84,8 +88,8 @@ h2{
     text-align: end;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Spred linksene jævnt */
-    height: 80%; /* Højden på tekstområdet */
+    justify-content: space-between; /* Spred linksene */
+    height: 80%; /* Højden på boxen */
     margin-top: 0px;
 }
 
@@ -99,8 +103,8 @@ h2{
     text-decoration: none;
     color: #FCF9F2; /* Tekstfarve */
     font-family: 'Kaftan'; /* Skrifttype */
+    font-weight: 100;
     font-size: 30px; /* Skriftstørrelse */
-    text-transform: uppercase; /* Alle bogstaver med stort */
 }
 
 /* Luk-knap styling */
@@ -110,12 +114,12 @@ h2{
     cursor: pointer;
 }
 
-/* Når menuen er aktiv */
+/* Den klasse som blev tilføjet igennem javascript når burgermenuen klikkes */
 .menu.active {
     right: 0; /* Menu glider ind på skærmen */
 }
 
-/* Dropdown-menu skjul */
+/* Undermenu skjul */
 .hidden {
     display: none;
 }
@@ -128,12 +132,14 @@ h2{
     padding-right: 20px; /* Afstand for adskillelse */
     font-size: 25px;
     font-family: 'Montserrat'; /* Skrifttype */
-    font-weight: 400; /* Normal vægt */
+    font-weight: 100; /* Normal vægt */
     color: var(--primaereFarve); /* Tekstfarve */
 }
 
 
-
+.logoforside{
+    padding-top: 100px;
+}
 
 .logoforside video {
     width: 100%; /* Sørg for at videoen fylder sektionen */
