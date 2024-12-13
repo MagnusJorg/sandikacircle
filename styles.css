@@ -46,6 +46,19 @@ h2{
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
 /* Top-sektion styling */
+#logofixed {
+    position: fixed; /* Gør logoet fast på skærmen */
+    bottom: 30px; /* Placér det 20px fra bunden */
+    right: 20px; /* Placér det 20px fra højre side */
+    z-index: 1000; /* Sørger for, at det er øverst */
+}
+
+#logofixed img {
+    max-width: 50px; /* Sæt en maksimal bredde på logoet */
+    max-height: 50px; /* Sæt en maksimal højde på logoet */
+    cursor: pointer; /* Ændrer markøren til en hånd ved hover */
+}
+
 .top {
     position: fixed; /* Gør sektionen fast på toppen af siden */
     top: +40px; /* Sætter den helt op i toppen */

@@ -11,6 +11,9 @@ const faciliteterMenu = document.getElementById('faciliteterMenu');
 const kontaktButton = document.getElementById('kontaktButton');
 const kontaktMenu = document.getElementById('kontaktMenu');
 
+const logofixed = document.getElementById('logofixed');
+const footer = document.querySelector('.footer');
+
 // Åbn menuen, når burger-ikonet klikkes
 burgerIkon.addEventListener('click', () => {
     // når user klikker på burger ikonet tilføjes klassen active til menuen.
@@ -43,3 +46,18 @@ toggleMenu(holdButton, holdMenu);
 toggleMenu(blivMedlemButton, blivMedlemMenu);
 toggleMenu(faciliteterButton, faciliteterMenu);
 toggleMenu(kontaktButton, kontaktMenu);
+
+// Funktion til at kontrollere scroll-positionen
+window.addEventListener('scroll', () => { //Lytter efter, når user scroller på siden.
+    // Henter burger-menuens position
+    const footerTop = footer.getBoundingClientRect().top; //getBoundClientRect Henter burger-menuens position relativt til viewport.
+    const viewportHeight = window.innerHeight;
+
+
+    // Skjul logoet, hvis footeren er synlig i viewporten
+    if (footerTop <= viewportHeight) {
+        logofixed.style.display = 'none'; // Skjul logoet
+    } else {
+        logofixed.style.display = 'block'; // Vis logoet
+    }
+});
