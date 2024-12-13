@@ -219,7 +219,7 @@ margin: 0px 0px 0px 60px;
     display: flex;
     margin-left: 30px;
     margin-top: 50x;
-
+    z-index: 100;
 }
 
 .yogaimg2{

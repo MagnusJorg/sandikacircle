@@ -97,13 +97,13 @@ h4{
     display: flex;
     justify-content: center;
     z-index: 1; /* Sørg for, at det første billede ligger bag det andet */
-    left: 9px;
+    left: 5px;
 }
 
 /* billede foran øverest */
 
 .billedeforan2 img{
-    max-width: 230px;
+    max-width: 210px;
     border-radius: 7%;
 }
 
@@ -126,8 +126,8 @@ h4{
 
 .billedeforan2 {
     position: absolute; /* Gør det muligt at placere denne sektion uafhængigt */
-    top: 51%; /* Placer det andet billede lidt nede */
-    left: 32%; /* Flyt det andet billede til højre */
+    top: 45%; /* Placer det andet billede lidt nede */
+    left: 42%; /* Flyt det andet billede til højre */
     z-index: 2; /* Sørg for, at det andet billede overlapper det første */
 }
 
