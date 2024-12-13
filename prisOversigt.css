@@ -20,6 +20,7 @@ body{
     background-color: var(--primaereFarve);
     margin: 0; /*fjerner alt margin, som basis*/
     padding: 0; /*fjerner alt padding, som basis*/
+    width: 100vw; /*Sætter bredden til at være 100% af hele bredden af vinduet (viewport) */
 }
 
 /* Fonts og med korrekt vogt hojde og farve */
@@ -37,6 +38,7 @@ h1{
     font-size: 55px;
     font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
+    position: relative; /*Sætter den til position relative, da den skal ændres på vha. javascript */
 }
 
 h2{
@@ -160,6 +162,22 @@ h2{
 }
 
 /*Main*/
+html,
+ body {
+     overflow-x: hidden; /* Forhindrer horisontal scroll */
+ }
+
+#ordEt{
+    position: relative; /* Sørger for, at det holder sig inden for parent-elementet */
+    right: 0; /* Fjerner overskud til højre */
+    margin: 25px 0px -40px 70px;
+    }
+
+#ordTo{
+    margin: 0px 0px 0px 120px;
+} 
+
+
 
 /* Container til hele sektionen */
 .pris-oversigt {
@@ -171,10 +189,9 @@ h2{
     margin: 0 auto;
 }
 
-/* Overskrifter */
+/* Prisoversigt tal*/
 .pris-oversigt h1 {
     margin: 0;
-    font-size: 4rem;
     
 }
 

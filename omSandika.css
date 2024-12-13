@@ -21,6 +21,7 @@ body{
     background-color: var(--primaereFarve);
     margin: 0; /*fjerner alt margin, som basis*/
     padding: 0; /*fjerner alt padding, som basis*/
+    width: 100vw; /*Sætter bredden til at være 100% af hele bredden af vinduet (viewport) */
 }
 
 /* Fonts og med korrekt vogt hojde og farve */
@@ -40,6 +41,7 @@ h1{
     font-size: 55px;
     font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
+    position: relative; /*Sætter den til position relative, da den skal ændres på vha. javascript */
 }
 
 h2{
@@ -163,7 +165,23 @@ h2{
 
 }
 
-/* Main */
+/*   ------- MAIN/INDHOLDET ----- */
+html,
+body {
+    overflow-x: hidden; /* Forhindrer horisontal scroll */
+}
+
+/*Placering af overskriften*/
+#ordEt{
+margin: 20px 0px -25px 15px;
+position: relative; /* Sørger for, at det holder sig inden for parent-elementet */
+right: 0; /* Fjerner overskud til højre */
+}
+
+#ordTo{
+margin: 0px 0px 0px 60px;
+}
+
 
 /* container */
 .omSandika {
@@ -208,24 +226,6 @@ h2{
     position: absolute;
     top: 1450px;
     right: 10%;
-}
-
-/* Hovedoverskrifter */
-.h1 {
-    margin: 0;
-    width: 100%;
-}
-
-/* For den ene h1 til venster og den anden til højer */
-.h1-venstre {
-    text-align: left; 
-    margin-bottom: 0px;
-    margin-top: 0px;
-}
-
-.h1-højre {
-    margin-top: 0px;
-    text-align: right;
 }
 
 .laura {

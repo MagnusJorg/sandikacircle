@@ -21,6 +21,7 @@ body{
     background-color: var(--primaereFarve);
     margin: 0; /*fjerner alt margin, som basis*/
     padding: 0; /*fjerner alt padding, som basis*/
+    width: 100vw; /*Giver den en maks vindueshøjde*/
 }
 
 /* Fonts og med korrekt vogt hojde og farve */
@@ -38,6 +39,7 @@ h1{
     font-size: 55px;
     font-weight: 30; /* vægt på fonten*/
     color: var(--sekundaereFarve);
+    position: relative; /*Sætter den til position relative, da den skal ændres på vha. javascript */
 }
 
 h2{
@@ -162,13 +164,26 @@ h2{
 }
 
 
+ /*   ------- INDHOLDET ----- */
+ html,
+ body {
+     overflow-x: hidden; /* Forhindrer horisontal scroll */
+ }
+
+ #ordEt{
+    position: relative; /* Sørger for, at det holder sig inden for parent-elementet */
+    right: 0; /* Fjerner overskud til højre */
+    margin: 0px 0px -40px 90px;
+    }
+
+#ordTo{
+    margin: 0px 0px 0px 145px;
+}
+    
 .overskrift{
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
 }
 
 
