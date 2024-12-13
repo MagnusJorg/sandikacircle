@@ -137,11 +137,11 @@ h2{
 
 
 .logoforside{
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .logoforside video {
-    width: 100%; /* Sørg for at videoen fylder sektionen */
+    width: 80%; /* Sørg for at videoen fylder sektionen */
     height: auto;
     display: block;
     margin: 0 auto; /* Centrer videoen */
