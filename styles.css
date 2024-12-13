@@ -129,7 +129,6 @@ h2{
 #blivMedlemMenu a,
 #faciliteterMenu a,
 #kontaktMenu a {
-    padding-right: 20px; /* Afstand for adskillelse */
     font-size: 25px;
     font-family: 'Montserrat'; /* Skrifttype */
     font-weight: 100; /* Normal vægt */
