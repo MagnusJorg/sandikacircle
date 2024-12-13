@@ -167,7 +167,7 @@ body {
 
 /*Placering af overskriften*/
 #ordEt{
-margin: 20px 0px -25px 15px;
+margin: 130px 0px -25px 15px;
 position: relative; /* Sørger for, at det holder sig inden for parent-elementet */
 right: 0; /* Fjerner overskud til højre */
 }

@@ -160,6 +160,11 @@ h2{
 
 /* ---- MIDTERSTE DEL ----- */
 
+.overskrift{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+}
 
 #faq{
     display: flex;

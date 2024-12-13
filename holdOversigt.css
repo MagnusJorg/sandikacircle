@@ -174,7 +174,7 @@ h2 {
 
     /*Placering af overskriften*/
     #ordEt {
-        margin: 0px 0px -35px 50px;
+        margin: 130px 0px -35px 50px;
         position: relative;/* Sørger for, at det holder sig inden for parent-elementet */
     }
 

@@ -78,7 +78,7 @@ h4{
 
 /* overskrift */
 .overskrift{
-    margin-top: 40px;
+    margin-top: 130px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,7 +126,7 @@ h4{
 
 .billedeforan2 {
     position: absolute; /* Gør det muligt at placere denne sektion uafhængigt */
-    top: 45%; /* Placer det andet billede lidt nede */
+    top: 53%; /* Placer det andet billede lidt nede */
     left: 42%; /* Flyt det andet billede til højre */
     z-index: 2; /* Sørg for, at det andet billede overlapper det første */
 }
