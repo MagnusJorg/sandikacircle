@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <!-- Top sektion med navigation -->
+        <!-- TOP SEKTION MED NAVIGATION -->
         <section class="top">
             <!-- Log ind ikon -->
             <a href="404.html"><img src="images/logInd.webp" alt="LOG IND"></a>
@@ -29,7 +29,7 @@
                 <!-- HOLD -->
                 <li>
                     <a href="#" id="holdButton">HOLD</a>
-                    <ul id="holdMenu" style="display: none;"> <!-- er skjult som sandart -->
+                    <ul id="holdMenu" style="display: none;"> <!-- Underlisten er skjult som standard -->
                         <li><a href="tilmeld.html">Tilmelding</a></li>
                         <li><a href="holdOversigt.html">Oversigt</a></li>
                         <li><a href="pakkeliste.html">Pakkeliste</a></li>
@@ -71,7 +71,7 @@
 
     <div id="logofixed">
         <a href="index.html">
-            <img src="images/logo.webp" alt="Logo">
+            <img src="images/logo.webp" alt=" Sandika circle logo i brun ">
         </a>
     </div>
 
@@ -79,15 +79,15 @@
 
     <!-- Overskrift -->
     <section class="overskrift"> <!-- Giver dem en class, så de lettere kan styles sammen efterfølgende-->
-        <h1 id="ordEt">Hold</h1> <!-- Deler overskriften op i to, da de hver især skal have en javascript effekt-->
+        <h1 id="ordEt">Hold</h1> <!-- Deler overskriften op i to og tildeler dem id'er, da de hver især skal have en javascript effekt-->
         <h1 id="ordTo">oversigt</h1>
     </section>
 
     <!-- Første hold -->
-    <section class="holdene">
-        <article class="holdbillede">
+    <section class="holdene"> <!-- Sætter hele holdet i en sektion, da de skal i display flex -->
+        <section class="holdbillede">
             <img src="images/yogaKvind3.webp" alt="Kvinde der laver Yoga" width="300">
-        </article>
+        </section>
         <section>
             <h2>Hot yoga</h2>
             <p class="varighed">Varighed: 1 time</p>
@@ -101,7 +101,7 @@
 
         <section>
             <a href="hotYoga.html" class="LaesMere">Læs mere ...</a>
-            <a href="hotYoga.html"><button>TILMELD</button></a>
+            <a href="hotYoga.html"><button>TILMELD</button></a> 
         </section>
 
     </section>
@@ -109,7 +109,7 @@
     <!-- Andet hold -->
     <section class="holdene"> <!-- Sætter hele holdet i en sektion, da de skal i display flex -->
         <section class="holdbillede">
-            <img src="images/yogakvind2.webp" alt="Kvinder der holder i hånd, så det former en cirkel" width="300">
+            <img src="images/yogakvind2.webp" alt="Kvinder der holder i hånd, så det former en cirkel" width="300"> <!-- Giver billederne en bestemt bredde-->
         </section>
         <section>
             <h2>Meditation</h2>
@@ -178,3 +178,6 @@
 </body>
 
 </html>
+
+
+<!-- SIDEN ER VALIDERET - ALT OK! (Mangler kun overskrifter i sektionerne, vurderes unødvendigt)-->

@@ -164,7 +164,8 @@ h2 {
     color: var(--primaereFarve); /* Tekstfarve */
 }
 
-    /*   ------- INDHOLDET ----- */
+    /*   ------- MAIN INDHOLDET ----- */
+
 
     html,
     body {
@@ -172,7 +173,7 @@ h2 {
     }
 
 
-    /*Placering af overskriften*/
+    /*Placering af overskrifterne*/
     #ordEt {
         margin: 130px 0px -35px 50px;
         position: relative;/* Sørger for, at det holder sig inden for parent-elementet */
@@ -183,7 +184,7 @@ h2 {
     }
 
 
-    /* Gør kanterne på billederne runde*/
+    /* Gør kanterne på alle billederne runde*/
     img {
         border-radius: 10%;
     }
@@ -192,23 +193,17 @@ h2 {
     /* Placering af holdene */
     .holdene {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 10%;
+        flex-direction: column; /*Placerer elementerne under hinanden*/
+        justify-content: center; /*Placerer dem centralt*/
+        margin: 10%; /*Tilpasse marginen*/
         margin-top: 0%;
     }
 
-    /* Styling af holdene */
+    /* Styling af holdene billederne */
     .holdbillede {
         display: flex;
         justify-content: center;
         margin-top: 40px;
-    }
-
-
-    /*Styler billederne i holdende*/
-    .holdimg {
-        display: flex;
     }
 
 
@@ -290,3 +285,7 @@ h2 {
     }
 
 }
+
+
+
+/* SIDEN ER VALIDERET - ALT OK! */

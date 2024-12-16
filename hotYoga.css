@@ -245,7 +245,12 @@ h2{
 }
 
 
-/* foooter */
+#deltagere{
+    font-weight: bolder;
+}
+
+
+/* ---- FOOTER ---- */
 
 .footer{
     display: flex;
