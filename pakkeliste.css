@@ -97,7 +97,7 @@ video {
     max-width: 100px; /* Maksimal bredde */
     max-height: 120px; /* Maksimal højde */
     width: 100%; /* Fast bredde */
-    height: 100%px; /* Fast højde */
+    height: 100%; /* Fast højde */
     object-fit: cover; /* Sikrer at videoen passer ind i boksen uden at forvrænges */
     opacity: 0; /* Make the video invisible initially */
     animation: videoFadeIn 0.5s ease-in forwards; /* Apply the animation */
