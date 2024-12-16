@@ -169,7 +169,7 @@ h2{
     }
 
 #ordTo{
-    margin: 0px 0px 0px 145px;
+    margin: 0px 0px 30px 145px;
 }
     
 .overskrift{
@@ -238,6 +238,7 @@ h2{
 .knapantal{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #varighed{
