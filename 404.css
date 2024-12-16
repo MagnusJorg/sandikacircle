@@ -80,7 +80,8 @@ h4{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    margin-top: 130px;
 }
 
 .overskrift img{
@@ -114,19 +115,36 @@ h4{
 
 
 /*Navigation burger og ikon mand */
-    .top{
-        display: flex;
-        justify-content: space-between;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 40px;
-    }
-/* navigation ikon størrelse */ 
-    .top img{
-        max-width: 45px;
-        max-height: 35px;
-    }
+#logofixed {
+    position: fixed; /* Gør logoet fast på skærmen */
+    bottom: 30px; /* Placér det 20px fra bunden */
+    right: 20px; /* Placér det 20px fra højre side */
+    z-index: 1000; /* Sørger for, at det er øverst */
+}
 
+#logofixed img {
+    max-width: 50px; /* Sæt en maksimal bredde på logoet */
+    max-height: 50px; /* Sæt en maksimal højde på logoet */
+    cursor: pointer; /* Ændrer markøren til en hånd ved hover */
+}
+
+.top {
+    position: fixed; /* Gør sektionen fast på toppen af siden */
+    top: +40px; /* Sætter den helt op i toppen */
+    left: 0; /* Sætter den helt til venstre */
+    width: 90%; /* Fylder hele bredden af skærmen */
+    z-index: 1000; /* Sørger for, at den ligger øverst */
+    display: flex; /* Holder burgerikonet og log ind-ikonet på linje */
+    justify-content: space-between; /* Placerer ikonerne i hver sin ende */
+    padding: 20px 25px; /* Tilføjer lidt luft omkring ikonerne */
+
+}
+
+/* Styling af billeder i top-sektionen */
+.top img {
+    max-width: 42px;
+    max-height: 36px;
+}
 
 /* Menu styling */
 .menu {
@@ -137,89 +155,66 @@ h4{
     height: 100%;
     background-color: #0B132B;
     color: #FCF9F2;
-    transition: right 0.5s ease-in-out; /* hastighed på menu slider */
-    z-index: 1000;
+    transition: right 0.5s ease-in-out; /* Glidende animation */
+    z-index: 1001;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    border-radius: 30px 0 0 30px; /* runde hjorner*/
+    border-radius: 30px 0 0 30px; /* Runde hjørner */
 }
 
+/* Menuens ul styling */
 .menu ul {
     list-style: none;
     padding: 0;
     text-align: end;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* spreeder links */
-    height: 80%; /* hojden på selve menu boxen */
+    justify-content: space-between; /* Spred linksene */
+    height: 80%; /* Højden på boxen */
     margin-top: 0px;
 }
 
-/* plads mellem x og tekst */
+/* Afstand mellem links */
 .menu ul li {
     margin: 20px 0;
 }
 
-/* dekoration af tekst*/
+/* Styling af links i menuen */
 .menu ul li a {
     text-decoration: none;
-    color: #FCF9F2;
-    font-size: 30px;
+    color: #FCF9F2; /* Tekstfarve */
+    font-family: 'Kaftan'; /* Skrifttype */
+    font-weight: 100;
+    font-size: 30px; /* Skriftstørrelse */
 }
 
-/* Luk-knap */
+/* Luk-knap styling */
 .menuluk {
     align-self: flex-end;
     font-size: 24px;
     cursor: pointer;
 }
 
-/* Aktiv menu */
+/* Den klasse som blev tilføjet igennem javascript når burgermenuen klikkes */
 .menu.active {
-    right: 0; /* Glid ind på skærmen */
+    right: 0; /* Menu glider ind på skærmen */
 }
 
-
-/* Skjul dropdown-menuen */
+/* Undermenu skjul */
 .hidden {
     display: none;
 }
 
-/* Styling for dropdown-menu */
-#holdMenu a {
-    padding-right: 20px; /* Indrykning for at skille den fra hovedmenuen */
-    font-size: 25px; /* størrelse på font */
-    font-family: 'Montserrat'; /* font */
-    font-weight: 15; /* font vægt */
-    color: var(--primaereFarve); /* font farve */
-
-}
-
-#blivMedlemMenu a {
-    padding-right: 20px;  
-    font-family: 'Montserrat';
-    font-weight: 15;
-    color: var(--primaereFarve);
-
-}
-
-#faciliteterMenu a {
-    padding-right: 20px; 
-    font-size: 25px; 
-    font-family: 'Montserrat';
-    font-weight: 15;
-    color: var(--primaereFarve);
-
-}
-
+/* Dropdown-menu styling */
+#holdMenu a,
+#blivMedlemMenu a,
+#faciliteterMenu a,
 #kontaktMenu a {
-    padding-right: 20px; 
-    font-size: 25px; 
-    font-family: 'Montserrat';
-    font-weight: 15;
-    color: var(--primaereFarve);
-
+    font-size: 25px;
+    font-family: 'Montserrat'; /* Skrifttype */
+    font-weight: 100; /* Normal vægt */
+    color: var(--primaereFarve); /* Tekstfarve */
 }
 
 /* foooter */
