@@ -45,7 +45,8 @@ h2{
 }
 
 @media screen and (min-width: 200px) and (max-width: 480px) {
-/* Top-sektion styling */
+
+
 .top {
     position: fixed; /* Gør sektionen fast på toppen af siden */
     top: +40px; /* Sætter den helt op i toppen */
@@ -74,7 +75,7 @@ h2{
     background-color: #0B132B;
     color: #FCF9F2;
     transition: right 0.5s ease-in-out; /* Glidende animation */
-    z-index: 1000;
+    z-index: 1001;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -137,11 +138,11 @@ h2{
 
 
 .logoforside{
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .logoforside video {
-    width: 100%; /* Sørg for at videoen fylder sektionen */
+    width: 80%; /* Sørg for at videoen fylder sektionen */
     height: auto;
     display: block;
     margin: 0 auto; /* Centrer videoen */
