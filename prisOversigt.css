@@ -210,6 +210,22 @@ html,
     align-items: center;
     text-align: center;
 }
+.kasse-knap {
+    position: absolute;
+    top: 88%;
+    left: 23px;
+    transform: translateY(-50%);
+    background-color: var(--primaereFarve);
+    color: var(--sekundaereFarve);
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    width: 90px;
+    font-weight: 600;
+    
+}
 
 .kasse h2 {
     font-size: 2rem;
