@@ -52,8 +52,6 @@ window.addEventListener('scroll', () => { //Lytter efter, når user scroller på
     // Henter burger-menuens position
     const footerTop = footer.getBoundingClientRect().top; //getBoundClientRect Henter burger-menuens position relativt til viewport.
     const viewportHeight = window.innerHeight;
-
-
     // Skjul logoet, hvis footeren er synlig i viewporten
     if (footerTop <= viewportHeight) {
         logofixed.style.display = 'none'; // Skjul logoet
